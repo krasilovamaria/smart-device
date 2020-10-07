@@ -13,7 +13,7 @@ body {
   margin: 0;
   font-family: "PTMono", "Arial Narrow", sans-serif;
   font-size: 16px;
-  line-height: 16px;
+  line-height: 18px;
   color: $white;
   background-color: $dark-blue;
   background-size: 320px auto;
@@ -63,11 +63,6 @@ input[type="radio"].visually-hidden {
 }
 
 .container {
-  margin: 0 auto;
-  width: 100%;
-}
-
-.container--index {
   position: relative;
   display: block;
   width: 100%;
@@ -75,22 +70,26 @@ input[type="radio"].visually-hidden {
   margin-right: auto;
   padding-left: 0;
   padding-right: 0;
+  background-size: 100%;
 }
 
 @media (min-width: $mobile-width) {
-  .container--index {
+  .container {
     background-image: url("../img/bg-mobile.png");
   }
 }
 
 @media (min-width: $tablet-width) {
-  .container--index {
+  .container {
     background-image: url("../img/bg-tablet.png");
   }
 }
 
 @media (min-width: $desktop-width) {
-  .container--index {
-    background-image: url("../img/bg-desktop.png");
+  .container {
+    background-image: none;
   }
+  // .container {
+  //   background-image: url("../img/bg-desktop.png");
+  // }
 }

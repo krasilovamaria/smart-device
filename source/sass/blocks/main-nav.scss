@@ -35,7 +35,13 @@
   padding-top: 5px;
 
   height: 35px;
-  width: 73px;
+  width: 90px;
+}
+
+.main-nav-list__item-call,
+.main-nav-list__item-link-info,
+.main-nav-list__item-link-call {
+  display: none;
 }
 
 //Tablet//
@@ -50,7 +56,41 @@
   .main-nav__toggle {
     &::before {
       top: 18px;
-      right: 42px;
+      right: 37px;
     }
+  }
+}
+
+//Desktop//
+@media (min-width: $desktop-width) {
+  .main-nav-list__item-link {
+    display: flex;
+    flex-direction: row;
+
+    width: 260px;
+  }
+
+  .main-nav-list__item-link-info {
+    display: block;
+    margin-left: 20px;
+
+    color: $white;
+  }
+
+  .main-nav-list__item-link-call {
+    display: block;
+    padding: 15px 15px;
+
+    width: 180px;
+    height: 45px;
+    color: $white;
+    font-family: "RobotoCondensed", "Arial Narrow", sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 2px;
+
+    border: 1px solid $white;
+    box-sizing: border-box;
+    border-radius: 5px;
   }
 }

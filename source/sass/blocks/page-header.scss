@@ -6,9 +6,9 @@
   display: flex;
   justify-content: space-between;
 
-  padding-top: 18px;
+  padding-top: 17px;
   padding-left: 17px;
-  padding-right: 15px;
+  padding-right: 5px;
 }
 
 //Tablet//
@@ -19,5 +19,14 @@
     padding-top: 19px;
     padding-left: 25px;
     padding-right: 24px;
+  }
+}
+
+//Desktop//
+@media (min-width: $desktop-width) {
+  .page-header {
+    min-width: 1024px;
+
+    padding-top: 34px;
   }
 }
