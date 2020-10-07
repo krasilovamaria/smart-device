@@ -16,7 +16,7 @@ body {
   line-height: 18px;
   color: $white;
   background-color: $dark-blue;
-  background-size: 320px auto;
+  background-size: 1910px auto;
   counter-reset: section;
 }
 
@@ -38,29 +38,6 @@ input[type="radio"].visually-hidden {
   clip: rect(0 0 0 0);
 }
 
-.button {
-  display: block;
-  width: 287px;
-  height: 55px;
-  font-family: inherit;
-  color: $white;
-  background-color: $blue;
-  text-transform: uppercase;
-  border: 0;
-  text-align: center;
-  padding: 17px;
-  box-sizing: border-box;
-
-  &:focus,
-  &:hover {
-    background-color: $dark-blue;
-  }
-
-  &:active {
-    background-color: $dark-blue;
-    color: $white;
-  }
-}
 
 .container {
   position: relative;
@@ -73,23 +50,3 @@ input[type="radio"].visually-hidden {
   background-size: 100%;
 }
 
-@media (min-width: $mobile-width) {
-  .container {
-    background-image: url("../img/bg-mobile.png");
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .container {
-    background-image: url("../img/bg-tablet.png");
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .container {
-    background-image: none;
-  }
-  // .container {
-  //   background-image: url("../img/bg-desktop.png");
-  // }
-}
