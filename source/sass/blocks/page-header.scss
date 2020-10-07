@@ -1,7 +1,7 @@
 //Mobile//
 
 .page-header {
-  max-width: 320px;
+  min-width: 320px;
 
   display: flex;
   justify-content: space-between;
@@ -9,4 +9,15 @@
   padding-top: 18px;
   padding-left: 17px;
   padding-right: 15px;
+}
+
+//Tablet//
+@media (min-width: $tablet-width) {
+  .page-header {
+    min-width: 768px;
+
+    padding-top: 19px;
+    padding-left: 25px;
+    padding-right: 24px;
+  }
 }

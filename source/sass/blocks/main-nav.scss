@@ -37,3 +37,20 @@
   height: 35px;
   width: 73px;
 }
+
+//Tablet//
+@media (min-width: $tablet-width) {
+  .main-nav__list {
+    padding-top: 15px;
+
+    height: 37px;
+    width: 82px;
+  }
+
+  .main-nav__toggle {
+    &::before {
+      top: 18px;
+      right: 42px;
+    }
+  }
+}
