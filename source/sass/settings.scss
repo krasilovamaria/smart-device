@@ -77,24 +77,20 @@ input[type="radio"].visually-hidden {
   padding-right: 0;
 }
 
-@media (max-width: $mobile-width) {
-  .space {
-    content: "";
-
-    &::after {
-      content: "\00a0";
-    }
+@media (min-width: $mobile-width) {
+  .container--index {
+    background-image: url("../img/bg-mobile.png");
   }
 }
 
 @media (min-width: $tablet-width) {
-  .container {
-    width: 100%;
+  .container--index {
+    background-image: url("../img/bg-tablet.png");
   }
 }
 
 @media (min-width: $desktop-width) {
-  .container {
-    width: 100%;
+  .container--index {
+    background-image: url("../img/bg-desktop.png");
   }
 }
