@@ -1,13 +1,13 @@
 @font-face {
   font-weight: 400;
-  font-family: "OswaldRegular";
+  font-family: "PTMono";
   font-style: normal;
-  src: url("../fonts/oswaldregular.woff2") format("woff2"), url("../fonts/oswaldregular.woff") format("woff");
+  src: url("../fonts/PTMono-Regular.woff") format("woff");
 }
 
 @font-face {
-  font-weight: 500;
-  font-family: "OswaldMedium";
-  font-style: normal;
-  src: url("../fonts/oswaldmedium.woff2") format("woff2"), url("../fonts/oswaldregular.woff") format("woff");
+  font-weight: 700;
+  font-family: "RobotoCondensed";
+  font-style: bold;
+  src: url("../fonts/RobotoCondensed-Bold.woff") format("woff");
 }
