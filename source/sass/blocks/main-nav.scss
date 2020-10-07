@@ -1,6 +1,14 @@
 //Mobile//
 
-.page-header {
+.main-nav {
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
+}
+
+.main-nav__toggle {
+  @include button-reset;
+}
+
+.main-nav__list {
+  @include list-reset;
 }

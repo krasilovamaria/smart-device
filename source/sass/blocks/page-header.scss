@@ -1,5 +1,12 @@
 //Mobile//
 
 .page-header {
+  max-width: 320px;
+
   display: flex;
+  justify-content: space-between;
+
+  padding-top: 17px;
+  padding-left: 17px;
+  padding-right: 15px;
 }
