@@ -1,1 +1,36 @@
 //Desktop//
+@media (min-width: $desktop-width-min) {
+  .navigation {
+    @include flex-row;
+  }
+
+  .navigation__contacts-list {
+    @include list-reset;
+    @include flex-row;
+  }
+
+  .navigation__contacts-call {
+    @include button-reset;
+    width: 180px;
+    height: 45px;
+
+    @include font-nav;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: $white;
+    border: 1px solid $white;
+    box-sizing: border-box;
+    border-radius: 5px;
+  }
+
+  .navigation__contacts-list-item a {
+    @include flex-row;
+    color: $white;
+    margin-right: 5rem;
+  }
+
+  .navigation__contacts-list-item a span {
+    margin-left: 1rem;
+  }
+}
