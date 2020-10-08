@@ -1,14 +1,29 @@
+//Mobile//
+.container {
+  width: 100%;
+}
+
+.page-header {
+  @include flex-row;
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+//Tablet//
+@media (min-width: $tablet-width-min) and (max-width: $tablet-width-max) {
+  .page-header {
+    padding-top: 2.5%;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+}
+
 //Desktop//
 @media (min-width: $desktop-width-min) {
-  .container {
-    width: 100%;
-  }
-
   .page-header {
-    @include flex-row;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
     padding-top: 2%;
     padding-left: 10%;
     padding-right: 10%;

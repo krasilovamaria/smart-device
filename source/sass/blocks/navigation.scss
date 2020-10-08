@@ -1,16 +1,35 @@
+//Mobile//
+.navigation {
+  @include flex-row;
+}
+
+.navigation__contacts-list {
+  @include list-reset;
+  @include flex-row;
+}
+
+.navigation__contacts-call,
+.navigation__contacts-list-item-link span {
+  display: none;
+}
+
+.navigation__contacts-list-item-link svg {
+  margin-left: 1.2rem;
+}
+
+//Tablet//
+@media (min-width: $tablet-width-min) and (max-width: $tablet-width-max) {
+  .navigation__contacts-list-item-link svg {
+    margin-left: 2rem;
+  }
+}
+
 //Desktop//
 @media (min-width: $desktop-width-min) {
-  .navigation {
-    @include flex-row;
-  }
-
-  .navigation__contacts-list {
-    @include list-reset;
-    @include flex-row;
-  }
-
+  // only Desktop
   .navigation__contacts-call {
     @include button-reset;
+    display: block;
     width: 180px;
     height: 45px;
 
@@ -23,14 +42,20 @@
     box-sizing: border-box;
     border-radius: 5px;
   }
-
-  .navigation__contacts-list-item a {
+  // only Desktop
+  .navigation__contacts-list-item-link {
     @include flex-row;
     color: $white;
     margin-right: 5rem;
   }
 
-  .navigation__contacts-list-item a span {
+  // only Desktop
+  .navigation__contacts-list-item-link span {
+    display: block;
     margin-left: 1rem;
+  }
+
+  .navigation__contacts-list-item-link svg {
+    margin-left: none;
   }
 }

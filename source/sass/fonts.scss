@@ -2,12 +2,12 @@
   font-weight: 400;
   font-family: "PTMono";
   font-style: normal;
-  src: url("../fonts/PTMono-Regular.woff") format("woff");
+  src: url("../fonts/PTMono-Regular.woff2") format("woff2"), url("../fonts/PTMono-Regular.woff") format("woff");
 }
 
 @font-face {
   font-weight: 700;
   font-family: "RobotoCondensed";
   font-style: bold;
-  src: url("../fonts/RobotoCondensed-Bold.woff") format("woff");
+  src: url("../fonts/RobotoCondensed-Bold.woff2") format("woff2"), url("../fonts/RobotoCondensed-Bold.woff") format("woff");
 }
