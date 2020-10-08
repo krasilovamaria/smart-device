@@ -1,14 +1,39 @@
+//Mobile//
+.copyright-wrap {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 1%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 1%;
+  text-transform: uppercase;
+  font-size: 13px;
+  line-height: 24px;
+}
+
+//Tablet// and //Mobile//
+@media (min-width: $mobile-width-min) and (max-width: $tablet-width-max) {
+  .copyright__text-rights,
+  .copyright__text-years {
+    display: none;
+  }
+
+  .copyright-wrap {
+    padding-top: 2%;
+    padding-left: 3%;
+    padding-right: 4%;
+    padding-bottom: 2%;
+  }
+}
+
 //Desktop//
 @media (min-width: $desktop-width-min) {
   .copyright-wrap {
-    width: 100%;
     padding-top: 1%;
     padding-left: 10%;
     padding-right: 10%;
     padding-bottom: 1%;
-    text-transform: uppercase;
-    font-size: 13px;
-    line-height: 24px;
   }
 
   .copyright__text-rights {

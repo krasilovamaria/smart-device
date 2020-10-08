@@ -4,6 +4,78 @@
   @include list-reset;
 }
 
+.page-footer {
+  width: 100%;
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: 0.03em;
+  color: $white-grey-font;
+  background-color: $white-grey;
+}
+
+.page-footer__social-list svg {
+  margin-right: 1rem;
+}
+
+.page-footer-contacts__list a {
+  color: $white-grey-font;
+}
+
+.page-footer-nav p,
+.page-footer-contacts p {
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 0;
+  font-family: "RobotoCondensed", "Arial Narrow", sans-serif;
+  text-transform: uppercase;
+  color: $dark-blue-font;
+}
+
+.page-footer__copyright {
+  border-top: 1px solid $white-grey-line;
+}
+
+//Tablet//
+@media (min-width: $tablet-width-min) and (max-width: $tablet-width-max) {
+  .page-footer-wrap {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .page-footer-links,
+  .page-footer__social-list {
+    @include flex-row;
+    justify-content: space-between;
+  }
+
+  .page-footer-links {
+    padding-top: 2.5%;
+    padding-left: 3%;
+    padding-right: 1%;
+    padding-bottom: 2%;
+    border-bottom: 1px solid $white-grey-line;
+  }
+
+  .page-footer-nav p,
+  .page-footer-contacts p {
+    margin-top: 22px;
+    margin-bottom: 21px;
+  }
+
+  .page-footer-container {
+    @include flex;
+    justify-content: space-between;
+    padding-top: 2%;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-bottom: 5%;
+  }
+
+  .page-footer__text-years {
+    text-transform: uppercase;
+  }
+}
+
 //Desktop//
 @media (min-width: $desktop-width-min) {
   .page-footer {
@@ -28,18 +100,17 @@
     padding-bottom: 2%;
   }
 
+  .page-footer-container {
+    display: flex;
+  }
+
   .page-footer-links {
+    padding: 0;
     margin-right: 10%;
   }
 
-  .page-footer-nav p,
-  .page-footer-contacts p {
-    margin: 0;
-    margin-bottom: 15px;
-    padding: 0;
-    font-family: "RobotoCondensed", "Arial Narrow", sans-serif;
-    text-transform: uppercase;
-    color: $dark-blue-font;
+  .page-footer__text-years {
+    display: none;
   }
 
   .page-footer__nav-list {
@@ -59,16 +130,7 @@
     margin-left: -7%;
   }
 
-  .page-footer-contacts__list a {
-    color: $white-grey-font;
-  }
-
   .page-footer__social-list svg {
-    margin-right: 1rem;
     margin-top: 2rem;
-  }
-
-  .page-footer__copyright {
-    border-top: 1px solid $white-grey-line;
   }
 }
