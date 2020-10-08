@@ -1,7 +1,41 @@
+.page-footer__social-list,
+.page-footer__nav-list,
+.page-footer-contacts__list {
+  @include list-reset;
+}
+
 //Desktop//
 @media (min-width: $desktop-width-min) {
   .page-footer {
     width: 100%;
+    padding-top: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 2%;
+    font-size: 15px;
+    line-height: 26px;
+    letter-spacing: 0.03em;
+    color: $white-grey-font;
     background-color: $white-grey;
+  }
+
+  .page-footer-wrap {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .page-footer-wrap section {
+    margin-right: 2%;
+  }
+
+  .page-footer-nav p,
+  .page-footer-contacts p {
+    font-family: "RobotoCondensed", "Arial Narrow", sans-serif;
+    text-transform: uppercase;
+    color: $dark-blue-font;
+  }
+
+  .page-footer-contacts__list a {
+    color: $white-grey-font;
   }
 }
