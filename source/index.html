@@ -68,10 +68,7 @@
       <section class="page-footer-links">
         <h2 class="visually-hidden">Контакты</h2>
         <a href="#" class="page-footer__logo">
-          <picture>
-            <source media="(min-width: 768px)" srcset="img/logo-footer-tablet.svg">
-            <img class="page-footer__logo-image" src="img/logo-mobile.svg" alt="Логотип Smart Device">
-          </picture>
+          <img class="page-footer__logo-image" src="img/logo-footer-tablet.svg" alt="Логотип Smart Device">
         </a>
         <span class="page-footer__text-years">1999-2018 SD Service Devices</span>
         <ul class="page-footer__social-list social-list">
@@ -103,7 +100,10 @@
       </section>
       <div class="page-footer-container">
         <section class="page-footer-nav">
-          <p>Разделы сайта</p>
+          <div class="page-footer-btn">
+            <p>Разделы сайта</p>
+            <button aria-label="Открыть/закрыть список"></button>
+          </div>
           <ul class="page-footer__nav-list">
             <li>О компании</li>
             <li>Продукты</li>
@@ -115,7 +115,10 @@
           </ul>
         </section>
         <section class="page-footer-contacts">
-          <p>Наш офис</p>
+          <div class="page-footer-btn">
+            <p>Наш офис</p>
+            <button aria-label="Открыть/закрыть список"></button>
+          </div>
           <ul class="page-footer-contacts__list">
             <li>г. Мытищи, Олимпийский проспект, д.10</li>
             <li>
@@ -142,6 +145,7 @@
     </div>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 
 </html>
