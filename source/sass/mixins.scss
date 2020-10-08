@@ -20,9 +20,13 @@
 }
 
 @mixin flex-row {
+  @include flex;
+  align-items: center;
+}
+
+@mixin flex {
   display: flex;
   flex-direction: row;
-  align-items: center;
 }
 
 @mixin font-nav {
