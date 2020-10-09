@@ -11,12 +11,13 @@ html {
 body {
   padding: 0;
   margin: 0;
-  font-family: "PTMono", "Arial Narrow", sans-serif;
+  font-family: $font-mono;
   font-size: 16px;
   line-height: 18px;
-  color: $white;
-  background-color: $dark-blue;
+  color: $dark-blue-font;
+  background-color: $white;
   counter-reset: section;
+  min-width: 320px 0;
 }
 
 a {
@@ -49,3 +50,30 @@ input[type="radio"].visually-hidden {
   background-size: 100%;
 }
 
+.container-bg-img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: $dark-blue;
+}
+
+//Mobile//
+//Mobile//
+@media (min-width: $mobile-width-min) and (max-width: $mobile-width-max) {
+  .container-bg-img {
+    background-image: url("../img/bg-mask-mobile.png");
+  }
+}
+
+//Tablet//
+@media (min-width: $tablet-width-min) and (max-width: $tablet-width-max) {
+  .container-bg-img {
+    background-image: url("../img/bg-mask-tablet.png");
+  }
+}
+
+//Desktop//
+@media (min-width: $desktop-width-min) {
+  .container-bg-img {
+    background-image: url("../img/bg-mask-desktop.png");
+  }
+}

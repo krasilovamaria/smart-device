@@ -12,8 +12,9 @@
 
 .promo__heading {
   margin: 0;
-  font-family: "RobotoCondensed", "Arial Narrow", sans-serif;
+  font-family: $font-roboto;
   text-transform: uppercase;
+  letter-spacing: 0.07em;
 }
 
 .promo__button,
@@ -21,7 +22,7 @@
   display: inline-block;
   vertical-align: middle;
   border-radius: 5px;
-  font-family: "RobotoCondensed", "Arial Narrow", sans-serif;
+  font-family: $font-roboto;
   text-transform: uppercase;
   text-align: center;
   font-size: 16px;
@@ -68,7 +69,6 @@
     margin-bottom: 45px;
     font-size: 40px;
     line-height: 47px;
-    letter-spacing: 0.07em;
   }
 
   .promo__info {
@@ -115,7 +115,6 @@
     margin-bottom: 57px;
     font-size: 60px;
     line-height: 70px;
-    letter-spacing: 0.07em;
   }
 
   .promo__info {
@@ -163,13 +162,9 @@
   }
 
   .promo__heading {
-    margin: 0;
     margin-bottom: 60px;
-    font-family: "RobotoCondensed", "Arial Narrow", sans-serif;
     font-size: 80px;
     line-height: 94px;
-    letter-spacing: 0.07em;
-    text-transform: uppercase;
   }
 
   .promo__info {
