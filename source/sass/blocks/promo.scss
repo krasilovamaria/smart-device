@@ -1,29 +1,161 @@
-//Desktop//
-@media (min-width: $desktop-width-min) {
-  .promo {
-    display: flex;
-    flex-direction: column;
-    height: 764px;
-    width: 100%;
-    background-color: transparent;
-    color: $white;
+.promo {
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+  color: $white;
+}
+
+.promo__wrap {
+  position: relative;
+  display: flex;
+}
+
+.promo__heading {
+  margin: 0;
+  font-family: "RobotoCondensed", "Arial Narrow", sans-serif;
+  text-transform: uppercase;
+}
+
+.promo__button,
+.promo__button--mobile {
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 5px;
+  font-family: "RobotoCondensed", "Arial Narrow", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.05em;
+  color: $white;
+  background-color: $blue;
+}
+
+.promo__img-wrap {
+  position: absolute;
+}
+
+.promo__info {
+  margin: 0;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 66px;
+    height: 2px;
+    background-color: $white;
+    left: 0;
+    top: 15px;
+  }
+}
+
+//Mobile//
+@media (min-width: $mobile-width-min) and (max-width: $mobile-width-max) {
+  .promo__button,
+  .promo__scroll {
+    display: none;
+  }
+
+  .promo__wrap {
+    min-width: 294px;
+    padding-top: 50%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .promo__heading {
+    margin-bottom: 45px;
+    font-size: 40px;
+    line-height: 47px;
+    letter-spacing: 0.07em;
+  }
+
+  .promo__info {
+    margin-bottom: 48px;
+    padding-left: 48px;
+    width: 274px;
+    font-size: 16px;
+    line-height: 28px;
 
     &::before {
       content: "";
       position: absolute;
-      top: 0;
-      width: 1910px;
-      height: 100%;
-      z-index: -1;
-      background-image: url("../img/bg-mask-desktop@1x.png");
-      background-size: cover;
-      background-color: $dark-blue;
+      width: 33px;
+      height: 2px;
+      background-color: $white;
+      left: 0;
+      top: 15px;
     }
   }
 
+  .promo__button--mobile {
+    padding: 17px;
+    margin-bottom: 70px;
+    height: 55px;
+    width: 287px;
+  }
+}
+
+//Tablet//
+@media (min-width: $tablet-width-min) and (max-width: $tablet-width-max) {
+  .promo {
+    height: 764px;
+    width: 100%;
+  }
+
   .promo__wrap {
-    position: relative;
-    display: flex;
+    min-width: 686px;
+    padding-top: 15%;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  .promo__heading {
+    margin-bottom: 57px;
+    font-size: 60px;
+    line-height: 70px;
+    letter-spacing: 0.07em;
+  }
+
+  .promo__info {
+    margin-bottom: 65px;
+    padding-left: 48px;
+    width: 383px;
+    font-size: 18px;
+    line-height: 28px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 33px;
+      height: 2px;
+      background-color: $white;
+      left: 0;
+      top: 15px;
+    }
+  }
+
+  .promo__button {
+    padding: 17px;
+    height: 55px;
+    width: 407px;
+  }
+
+  .promo__button--mobile,
+  .promo__scroll {
+    display: none;
+  }
+}
+
+//Desktop//
+@media (min-width: $desktop-width-min) {
+  .promo {
+    height: 764px;
+    width: 100%;
+  }
+
+  .promo__wrap {
     min-width: 750px;
     padding-top: 15%;
     padding-left: 10%;
@@ -41,11 +173,9 @@
   }
 
   .promo__info {
-    margin: 0;
     margin-bottom: 53px;
     padding-left: 96px;
     width: 777px;
-    position: relative;
     font-size: 22px;
     line-height: 34px;
 
@@ -61,20 +191,9 @@
   }
 
   .promo__button {
-    display: inline-block;
     padding: 17px;
     height: 55px;
     width: 407px;
-    vertical-align: middle;
-    border-radius: 5px;
-    font-family: "RobotoCondensed", "Arial Narrow", sans-serif;
-    text-transform: uppercase;
-    font-size: 16px;
-    line-height: 19px;
-    text-align: center;
-    letter-spacing: 0.05em;
-    color: $white;
-    background-color: $blue;
   }
 
   .promo__button--mobile {
@@ -92,18 +211,5 @@
     font-size: 14px;
     line-height: 16px;
     color: $white-grey-font;
-  }
-
-  .promo__img-wrap {
-    position: absolute;
-
-    svg {
-      margin-left: 70%;
-    }
-
-    img {
-      margin-top: -60%;
-      margin-left: 70%;
-    }
   }
 }
