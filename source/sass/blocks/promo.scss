@@ -95,6 +95,13 @@
     height: 55px;
     width: 287px;
   }
+
+  .promo__img-container {
+    position: relative;
+    width: 320px;
+    height: 529px;
+    background-image: url("../img/bg-triangles-mobile.svg");
+  }
 }
 
 //Tablet//
@@ -145,6 +152,13 @@
   .promo__scroll {
     display: none;
   }
+
+  .promo__img-container {
+    position: relative;
+    width: 770px;
+    height: 563px;
+    background-image: url("../img/bg-triangles-tablet.svg");
+  }
 }
 
 //Desktop//
@@ -155,6 +169,7 @@
   }
 
   .promo__wrap {
+    position: relative;
     min-width: 750px;
     padding-top: 15%;
     padding-left: 10%;
@@ -197,7 +212,7 @@
 
   .promo__scroll {
     position: absolute;
-    bottom: -30%;
+    bottom: 2%;
     left: 5%;
     display: inline-block;
     padding: 5px;
@@ -206,5 +221,12 @@
     font-size: 14px;
     line-height: 16px;
     color: $white-grey-font;
+  }
+
+  .promo__img-container {
+    position: relative;
+    width: 611px;
+    height: 487px;
+    background-image: url("../img/bg-triangles-desktop.svg");
   }
 }
