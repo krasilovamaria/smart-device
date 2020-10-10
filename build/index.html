@@ -61,7 +61,11 @@
                   <a class="promo__scroll" href="#">Скролл вниз</a>
                 </div>
                 <div class="promo__img-container">
-                    <img class="promo__img-cards" src="img/cards-desktop.png" alt="Изображение печатных карт">
+                    <picture>
+                        <source media="(min-width: 1300px)" srcset="img/cards-desktop.png">
+                        <source media="(min-width: 768px)" srcset="img/cards-tablet.png">
+                        <img class="promo__img-cards" src="img/cards-mobile.png" alt="Изображение печатных карт">
+                      </picture>
                 </div>
               </div>
             </section>

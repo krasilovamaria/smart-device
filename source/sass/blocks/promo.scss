@@ -53,6 +53,10 @@
 
 //Mobile//
 @media (min-width: $mobile-width-min) and (max-width: $mobile-width-max) {
+  .promo {
+    height: 646px;
+  }
+
   .promo__button,
   .promo__scroll {
     display: none;
@@ -60,21 +64,34 @@
 
   .promo__wrap {
     min-width: 294px;
-    padding-top: 50%;
+    padding-top: 20px;
     padding-left: 5%;
     padding-right: 5%;
   }
 
+  .promo__img-container {
+    position: relative;
+    margin-top: 20px;
+    margin-left: -275px;
+    width: 320px;
+    height: 529px;
+    background-image: url("../../img/bg-triangles-mobile.svg");
+    z-index: 1;
+  }
+
   .promo__heading {
+    position: relative;
+    margin-top: 215px;
     margin-bottom: 45px;
     font-size: 40px;
     line-height: 47px;
+    z-index: 2;
   }
 
   .promo__info {
     margin-bottom: 48px;
     padding-left: 48px;
-    width: 274px;
+    min-width: 274px;
     font-size: 16px;
     line-height: 28px;
 
@@ -95,13 +112,6 @@
     height: 55px;
     width: 287px;
   }
-
-  .promo__img-container {
-    position: relative;
-    width: 320px;
-    height: 529px;
-    background-image: url("../img/bg-triangles-mobile.svg");
-  }
 }
 
 //Tablet//
@@ -113,12 +123,13 @@
 
   .promo__wrap {
     min-width: 686px;
-    padding-top: 15%;
+    padding-top: 20px;
     padding-left: 10%;
     padding-right: 10%;
   }
 
   .promo__heading {
+    margin-top: 150px;
     margin-bottom: 57px;
     font-size: 60px;
     line-height: 70px;
@@ -127,7 +138,7 @@
   .promo__info {
     margin-bottom: 65px;
     padding-left: 48px;
-    width: 383px;
+    min-width: 383px;
     font-size: 18px;
     line-height: 28px;
 
@@ -143,6 +154,7 @@
   }
 
   .promo__button {
+    margin-left: 60px;
     padding: 17px;
     height: 55px;
     width: 407px;
@@ -155,16 +167,17 @@
 
   .promo__img-container {
     position: relative;
+    margin-top: 50px;
     width: 770px;
     height: 563px;
-    background-image: url("../img/bg-triangles-tablet.svg");
+    background-image: url("../../img/bg-triangles-tablet.svg");
   }
 }
 
 //Desktop//
 @media (min-width: $desktop-width-min) {
   .promo {
-    height: 764px;
+    height: 875px;
     width: 100%;
   }
 
@@ -225,8 +238,13 @@
 
   .promo__img-container {
     position: relative;
+    margin-top: -4%;
     width: 611px;
     height: 487px;
-    background-image: url("../img/bg-triangles-desktop.svg");
+    background-image: url("../../img/bg-triangles-desktop.svg");
+  }
+
+  .promo__img-cards {
+    margin-top: -2%;
   }
 }
