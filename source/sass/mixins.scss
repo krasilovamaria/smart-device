@@ -19,14 +19,14 @@
   border: none;
 }
 
-@mixin flex-row {
-  @include flex;
-  align-items: center;
-}
-
 @mixin flex {
   display: flex;
   flex-direction: row;
+}
+
+@mixin flex-row {
+  @include flex;
+  align-items: center;
 }
 
 @mixin flex-center {
