@@ -29,10 +29,20 @@
   flex-direction: row;
 }
 
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+}
+
 @mixin font-nav {
   font-family: "RobotoCondensed", "Arial Narrow", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
   line-height: 16px;
+}
+
+@mixin indent {
+  margin: 0;
+  padding: 0;
 }
