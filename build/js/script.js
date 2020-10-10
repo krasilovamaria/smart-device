@@ -1,15 +1,16 @@
 'use strict';
-var pageHeader = document.querySelector('.page-header');
-var headerToggle = document.querySelector('.page-header__toggle');
+var dots = document.querySelector('.about__dots');
+var more = document.querySelector('.about__more');
+var btnMoreText = document.querySelector('.about__btn');
 
-pageHeader.classList.remove('page-header--nojs');
-
-headerToggle.addEventListener('click', function () {
-  if (pageHeader.classList.contains('page-header--closed')) {
-    pageHeader.classList.remove('page-header--closed');
-    pageHeader.classList.add('page-header--opened');
+btnMoreText.addEventListener('click', function () {
+  if (dots.style.display === 'none') {
+    dots.style.display = 'inline';
+    btnMoreText.innerHTML = 'Подробнее';
+    more.display.style = 'none';
   } else {
-    pageHeader.classList.add('page-header--closed');
-    pageHeader.classList.remove('page-header--opened');
+    dots.style.display = 'none';
+    btnMoreText.innerHTML = 'Скрыть';
+    more.display.style = 'inline';
   }
 });

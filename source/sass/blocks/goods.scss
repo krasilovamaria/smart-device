@@ -1,0 +1,164 @@
+.goods {
+  background-color: $dark-blue;
+  color: $white;
+  padding: 5% 12%;
+  font-family: $font-roboto;
+  font-weight: 400;
+  width: 100%;
+
+  & h2 {
+    margin: 0;
+    margin-bottom: 5%;
+    font-weight: 400;
+  }
+
+  & a {
+    color: $white;
+  }
+
+  & p {
+    position: absolute;
+    margin: 0;
+    top: 10%;
+    left: 5%;
+    display: inline-block;
+    vertical-align: center;
+    width: 50%;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  & img {
+    opacity: 0.2;
+  }
+}
+
+.goods__list {
+  @include list-reset;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.goods__item {
+  width: 100%;
+  height: 256px;
+  position: relative;
+  margin-right: 15px;
+  margin-bottom: 20px;
+
+  & h2 {
+    font-weight: 400;
+  }
+
+  & button {
+    @include button-reset;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 63px;
+    height: 63px;
+    background-color: $blue;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 7px;
+      height: 9px;
+      background-image: url("../../img/small-arrow-right.svg");
+    }
+  }
+}
+
+//Mobile//
+@media (min-width: $mobile-width-min) and (max-width: $mobile-width-max) {
+  .goods {
+    background-color: $dark-blue;
+    color: $white;
+    padding: 5%;
+
+    & h2 {
+      margin-top: 5%;
+      margin-bottom: 15%;
+      font-size: 28px;
+      line-height: 38px;
+    }
+
+    & img {
+      width: 290px;
+      height: 256px;
+      margin-bottom: 15px;
+    }
+  }
+
+  .goods__list {
+    flex-direction: column;
+  }
+
+  .goods__item {
+    min-width: 290px;
+  }
+}
+
+//Tablet//
+@media (min-width: $tablet-width-min) and (max-width: $tablet-width-max) {
+  .goods {
+    & h2 {
+      font-size: 32px;
+      line-height: 48px;
+    }
+
+    & img {
+      width: 715px;
+      height: 256px;
+      margin-bottom: 15px;
+    }
+
+    & p {
+      width: 20%;
+    }
+  }
+
+  .goods__list {
+    flex-direction: column;
+  }
+
+  .goods__item {
+    min-width: 715px;
+  }
+}
+
+//Desktop//
+@media (min-width: $desktop-width-min) {
+  .goods {
+    & h2 {
+      font-size: 36px;
+      line-height: 51px;
+    }
+
+    & a {
+      color: $white;
+    }
+
+    & img {
+      opacity: 0.2;
+      width: 370px;
+      height: 620px;
+    }
+
+    & p {
+      width: 40%;
+      position: absolute;
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+
+  .goods__list {
+    flex-direction: row;
+  }
+
+  .goods__item {
+    height: 620px;
+  }
+}
