@@ -18,7 +18,7 @@
 }
 
 .promo__button,
-.promo__button--mobile {
+.promo__button-mobile {
   display: inline-block;
   vertical-align: middle;
   border-radius: 5px;
@@ -106,7 +106,7 @@
     }
   }
 
-  .promo__button--mobile {
+  .promo__button-mobile {
     padding: 17px;
     margin-bottom: 70px;
     height: 55px;
@@ -160,7 +160,7 @@
     width: 407px;
   }
 
-  .promo__button--mobile,
+  .promo__button-mobile,
   .promo__scroll {
     display: none;
   }
@@ -219,7 +219,7 @@
     width: 407px;
   }
 
-  .promo__button--mobile {
+  .promo__button-mobile {
     display: none;
   }
 
