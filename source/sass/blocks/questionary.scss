@@ -1,0 +1,22 @@
+.questionary {
+  position: relative;
+  color: $white;
+  background-color: $blue;
+  padding-top: 95px;
+  padding-bottom: 115px;
+  background-repeat: no-repeat;
+  background-image: url("../img/paper-triangles.svg");
+}
+
+.questionary__title {
+  margin: 0;
+  font-family: $font-roboto;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+}
+
+.questionary__info {
+  font-size: 16px;
+  line-height: 22px;
+}

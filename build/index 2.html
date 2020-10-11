@@ -179,6 +179,34 @@
           </li>
         </ul>
       </section>
+      <section class="questionary">
+        <div class="questionary__img-container">
+          <img src="img/paper-airplane@1px.png" srcset="img/paper-airplane@1px.png 1x, img/paper-airplane@2px.png 2x" alt="paper-airplane" width="511" height="288">
+        </div>
+        <div class="questionary__wrapper">
+          <h3 class="questionary__title">Остались вопросы? Задайте их нам!</h3>
+          <p class="questionary__info">Мы проконсультируем Вас бесплатно</p>
+        </div>
+        <form class="questionary-form" action="#" method="get">
+          <fieldset>
+            <label for="questionary-form-username" class="visually-hidden"></label>
+            <input type="text" placeholder="Имя" name="username" id="questionary-form-username" required="">
+
+            <label for="questionary-form-phone" class="visually-hidden"></label>
+            <input type="tel" placeholder="Телефон" name="phone" id="questionary-form-phone" required="">
+
+            <label for="questionary-form-field" class="visually-hidden"></label>
+            <textarea name="question-field" cols="30" rows="7" placeholder="Ваш вопрос" id="questionary-form-field" required=""></textarea>
+          </fieldset>
+          <fieldset class="questionary-btn-wrap">
+            <button class="questionary__btn" type="submit" name="question">Задать вопрос</button>
+            <div class="questionary__check-wrap">
+              <input class="visually-hidden" type="checkbox" id="confidential" name="confidential" required="">
+              <label for="confidential">Я согласен на обработку персональных данных</label>
+            </div>
+          </fieldset>
+        </form>
+      </section>
     </main>
 
     <footer class="page-footer">
