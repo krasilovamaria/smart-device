@@ -1,28 +1,8 @@
-//Mobile//
-.container {
-  width: 100%;
-}
-
 .page-header {
   background-size: cover;
   background-repeat: no-repeat;
   background-color: $dark-blue;
-}
-
-.wrap-header {
-  @include flex-row;
-  justify-content: space-between;
-  width: 100%;
-  padding-top: 5%;
-  padding-left: 5%;
-  padding-right: 5%;
-}
-
-//Mobile//
-@media (min-width: $mobile-width-min) and (max-width: $mobile-width-max) {
-  .page-header {
-    background-image: url("../img/bg-mask-mobile.png");
-  }
+  background-image: url("../img/bg-mask-desktop.png");
 }
 
 //Tablet//
@@ -30,24 +10,12 @@
   .page-header {
     background-image: url("../img/bg-mask-tablet.png");
   }
-
-  .wrap-header {
-    padding-top: 2.5%;
-    padding-left: 3%;
-    padding-right: 3%;
-  }
 }
 
-//Desktop//
-@media (min-width: $desktop-width-min) {
+//Mobile//
+@media (min-width: $mobile-width-min) and (max-width: $mobile-width-max) {
   .page-header {
-    background-image: url("../img/bg-mask-desktop.png");
-  }
-
-  .wrap-header {
-    padding-top: 2.5%;
-    padding-left: 3%;
-    padding-right: 3%;
+    background-image: url("../img/bg-mask-mobile.png");
   }
 }
 

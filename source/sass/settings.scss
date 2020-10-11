@@ -50,3 +50,21 @@ input[type="radio"].visually-hidden {
   background-size: 100%;
   overflow-x: hidden;
 }
+
+.wrap-header {
+  @include flex-row;
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 2.5%;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+//Mobile//
+@media (min-width: $mobile-width-min) and (max-width: $mobile-width-max) {
+  .wrap-header {
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}

@@ -13,7 +13,9 @@
   background-color: $white-grey;
 }
 
+
 .page-footer__social-list svg {
+  margin-top: 2rem;
   margin-right: 1rem;
 }
 
@@ -37,6 +39,109 @@
 
 .page-footer-btn {
   display: flex;
+}
+
+//Desktop//
+@media (min-width: $desktop-width-min) {
+  .page-footer-wrap,
+  .page-footer__social-list {
+    @include flex;
+  }
+
+  .page-footer-wrap {
+    width: 100%;
+    padding-top: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 2%;
+  }
+
+  .page-footer-container {
+    display: flex;
+  }
+
+  .page-footer-links {
+    padding: 0;
+    margin-right: 10%;
+  }
+
+  .page-footer__text-years {
+    display: none;
+  }
+
+  .page-footer__nav-list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 50%;
+    width: 550px;
+    font-size: 15px;
+
+    li {
+      width: 50%;
+    }
+  }
+
+  .page-footer-contacts {
+    margin-left: -10%;
+  }
+
+  .page-footer-nav__header-button {
+    display: none;
+  }
+
+  .page-footer-btn button {
+    display: none;
+  }
+}
+
+//Tablet//
+@media (min-width: $tablet-width-min) and (max-width: $tablet-width-max) {
+  .page-footer-wrap {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .page-footer-links,
+  .page-footer__social-list {
+    @include flex-row;
+    justify-content: space-between;
+  }
+
+  .page-footer-links {
+    padding-top: 2.5%;
+    padding-left: 3%;
+    padding-right: 1%;
+    padding-bottom: 2%;
+    border-bottom: 1px solid $white-grey-line;
+  }
+
+  .page-footer-nav p,
+  .page-footer-contacts p {
+    margin-top: 22px;
+    margin-bottom: 21px;
+  }
+
+  .page-footer-container {
+    @include flex;
+    justify-content: space-between;
+    padding-top: 2%;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-bottom: 5%;
+  }
+
+  .page-footer__text-years {
+    text-transform: uppercase;
+  }
+
+  .page-footer-nav__header-button {
+    display: none;
+  }
+
+  .page-footer-btn button {
+    display: none;
+  }
 }
 
 //Mobile//
@@ -105,121 +210,5 @@
     width: 16px;
     height: 16px;
     background-image: url("../img/icon-plus.svg");
-  }
-}
-
-//Tablet//
-@media (min-width: $tablet-width-min) and (max-width: $tablet-width-max) {
-  .page-footer-wrap {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .page-footer-links,
-  .page-footer__social-list {
-    @include flex-row;
-    justify-content: space-between;
-  }
-
-  .page-footer-links {
-    padding-top: 2.5%;
-    padding-left: 3%;
-    padding-right: 1%;
-    padding-bottom: 2%;
-    border-bottom: 1px solid $white-grey-line;
-  }
-
-  .page-footer-nav p,
-  .page-footer-contacts p {
-    margin-top: 22px;
-    margin-bottom: 21px;
-  }
-
-  .page-footer-container {
-    @include flex;
-    justify-content: space-between;
-    padding-top: 2%;
-    padding-left: 3%;
-    padding-right: 3%;
-    padding-bottom: 5%;
-  }
-
-  .page-footer__text-years {
-    text-transform: uppercase;
-  }
-
-  .page-footer-nav__header-button {
-    display: none;
-  }
-
-  .page-footer-btn button {
-    display: none;
-  }
-}
-
-//Desktop//
-@media (min-width: $desktop-width-min) {
-  .page-footer {
-    width: 100%;
-    font-size: 15px;
-    line-height: 25px;
-    letter-spacing: 0.03em;
-    color: $white-grey-font;
-    background-color: $white-grey;
-  }
-
-  .page-footer-wrap,
-  .page-footer__social-list {
-    @include flex;
-  }
-
-  .page-footer-wrap {
-    width: 100%;
-    padding-top: 5%;
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-bottom: 2%;
-  }
-
-  .page-footer-container {
-    display: flex;
-  }
-
-  .page-footer-links {
-    padding: 0;
-    margin-right: 10%;
-  }
-
-  .page-footer__text-years {
-    display: none;
-  }
-
-  .page-footer__nav-list {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    height: 50%;
-    width: 550px;
-    font-size: 15px;
-
-    li {
-      width: 50%;
-    }
-  }
-
-  .page-footer-contacts {
-    margin-left: -10%;
-  }
-
-  .page-footer__social-list svg {
-    margin-top: 2rem;
-  }
-
-  .page-footer-nav__header-button {
-    display: none;
-  }
-
-  .page-footer-btn button {
-    display: none;
   }
 }

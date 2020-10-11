@@ -51,129 +51,6 @@
   }
 }
 
-//Mobile//
-@media (min-width: $mobile-width-min) and (max-width: $mobile-width-max) {
-  .promo {
-    height: 646px;
-  }
-
-  .promo__button,
-  .promo__scroll {
-    display: none;
-  }
-
-  .promo__wrap {
-    min-width: 294px;
-    padding-top: 20px;
-    padding-left: 5%;
-    padding-right: 5%;
-  }
-
-  .promo__img-container {
-    position: relative;
-    margin-top: 20px;
-    margin-left: -275px;
-    width: 320px;
-    height: 529px;
-    background-image: url("../../img/bg-triangles-mobile.svg");
-    z-index: 1;
-  }
-
-  .promo__heading {
-    position: relative;
-    margin-top: 215px;
-    margin-bottom: 45px;
-    font-size: 40px;
-    line-height: 47px;
-    z-index: 2;
-  }
-
-  .promo__info {
-    margin-bottom: 48px;
-    padding-left: 48px;
-    min-width: 274px;
-    font-size: 16px;
-    line-height: 28px;
-
-    &::before {
-      content: "";
-      position: absolute;
-      width: 33px;
-      height: 2px;
-      background-color: $white;
-      left: 0;
-      top: 15px;
-    }
-  }
-
-  .promo__button-mobile {
-    padding: 17px;
-    margin-bottom: 70px;
-    height: 55px;
-    width: 287px;
-  }
-}
-
-//Tablet//
-@media (min-width: $tablet-width-min) and (max-width: $tablet-width-max) {
-  .promo {
-    height: 764px;
-    width: 100%;
-  }
-
-  .promo__wrap {
-    min-width: 686px;
-    padding-top: 20px;
-    padding-left: 10%;
-    padding-right: 10%;
-  }
-
-  .promo__heading {
-    margin-top: 150px;
-    margin-bottom: 57px;
-    font-size: 60px;
-    line-height: 70px;
-  }
-
-  .promo__info {
-    margin-bottom: 65px;
-    padding-left: 48px;
-    min-width: 383px;
-    font-size: 18px;
-    line-height: 28px;
-
-    &::before {
-      content: "";
-      position: absolute;
-      width: 33px;
-      height: 2px;
-      background-color: $white;
-      left: 0;
-      top: 15px;
-    }
-  }
-
-  .promo__button {
-    margin-left: 60px;
-    padding: 17px;
-    height: 55px;
-    width: 407px;
-  }
-
-  .promo__button-mobile,
-  .promo__scroll {
-    display: none;
-  }
-
-  .promo__img-container {
-    position: relative;
-    margin-top: 50px;
-    width: 770px;
-    height: 563px;
-    background-image: url("../../img/bg-triangles-tablet.svg");
-  }
-}
-
 //Desktop//
 @media (min-width: $desktop-width-min) {
   .promo {
@@ -241,10 +118,145 @@
     margin-top: -4%;
     width: 611px;
     height: 487px;
-    background-image: url("../../img/bg-triangles-desktop.svg");
+    background-image: url("../img/bg-triangles-desktop.svg");
   }
 
   .promo__img-cards {
     margin-top: -2%;
+  }
+}
+
+//Tablet//
+@media (min-width: $tablet-width-min) and (max-width: $tablet-width-max) {
+  .promo {
+    height: 764px;
+    width: 100%;
+  }
+
+  .promo__wrap {
+    min-width: 686px;
+    padding-top: 20px;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  .promo__heading {
+    margin-top: 150px;
+    margin-bottom: 57px;
+    width: 320px;
+    font-size: 60px;
+    line-height: 70px;
+  }
+
+  .promo__info {
+    margin-bottom: 65px;
+    padding-left: 48px;
+    width: 400px;
+    font-size: 18px;
+    line-height: 28px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 33px;
+      height: 2px;
+      background-color: $white;
+      left: 0;
+      top: 15px;
+    }
+  }
+
+  .promo__button {
+    margin-left: 60px;
+    padding: 17px;
+    height: 55px;
+    width: 407px;
+  }
+
+  .promo__button-mobile,
+  .promo__scroll {
+    display: none;
+  }
+
+  .promo__img-container {
+    position: absolute;
+    top: -25px;
+    left: 440px;
+    width: 770px;
+    height: 539px;
+    background-image: url("../img/bg-triangles-tablet.svg");
+
+    img {
+      margin-top: 80px;
+      margin-left: 210px;
+    }
+  }
+}
+
+//Mobile//
+@media (min-width: $mobile-width-min) and (max-width: $mobile-width-max) {
+  .promo {
+    height: 646px;
+  }
+
+  .promo__button,
+  .promo__scroll {
+    display: none;
+  }
+
+  .promo__wrap {
+    min-width: 294px;
+    padding-top: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .promo__img-container {
+    position: absolute;
+    top: -15px;
+    left: 140px;
+    width: 675px;
+    height: 495px;
+    background-image: url("../img/bg-triangles-mobile.svg");
+
+    img {
+      margin-top: 70px;
+      margin-left: -130px;
+    }
+  }
+
+  .promo__heading {
+    position: relative;
+    margin-top: 215px;
+    margin-bottom: 45px;
+    font-size: 40px;
+    line-height: 47px;
+    z-index: 2;
+  }
+
+  .promo__info {
+    position: relative;
+    margin-bottom: 48px;
+    padding-left: 48px;
+    min-width: 274px;
+    font-size: 16px;
+    line-height: 28px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 33px;
+      height: 2px;
+      background-color: $white;
+      left: 0;
+      top: 15px;
+    }
+  }
+
+  .promo__button-mobile {
+    padding: 17px;
+    margin-bottom: 70px;
+    height: 55px;
+    width: 287px;
   }
 }

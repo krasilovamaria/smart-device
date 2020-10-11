@@ -4,13 +4,13 @@ var more = document.querySelector('.about__more');
 var btnMoreText = document.querySelector('.about__btn');
 
 btnMoreText.addEventListener('click', function () {
-  if (dots.style.display === 'none') {
-    dots.style.display = 'inline';
+  if (more.style.display === 'none') {
+    dots.style.display = 'none';
     btnMoreText.innerHTML = 'Подробнее';
-    more.display.style = 'none';
+    more.display.style = 'block';
   } else {
     dots.style.display = 'none';
     btnMoreText.innerHTML = 'Скрыть';
-    more.display.style = 'inline';
+    more.display.style = 'block';
   }
 });
