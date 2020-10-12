@@ -177,3 +177,21 @@
   background-repeat: no-repeat;
   background-position: center;
 }
+
+//Tablet//
+@media (min-width: $tablet-width-min) and (max-width: $tablet-width-max) {
+  .questionary {
+    padding: 10% 12%;
+  }
+
+  .questionary__img-wrap {
+    display: none;
+  }
+
+  .questionary__wrapper,
+  .questionary-form__input-wrap,
+  .questionary-form__btn-wrap {
+    margin: 0 auto;
+    width: 100%;
+  }
+}
