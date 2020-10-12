@@ -207,14 +207,14 @@
           </fieldset>
         </form>
       </section>
-      <section class="popup popup--opened">
+      <section class="popup popup--closed">
         <div class="popup__container">
           <div class="popup__wrapper">
             <h3 class="popup__title">Закажите звонок</h3>
             <p class="popup__info">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
             <button class="popup__btn-close" type="submit" name="btn-close"></button>
           </div>
-          <form class="popup-form" action="#" method="get">
+          <form class="popup-form" id="popup-form" action="#" method="get">
             <fieldset class="popup-form__input-wrap">
               <label for="popup-form-username" class="visually-hidden"></label>
               <input type="text" placeholder="Имя" name="username" id="popup-form-username" required="">
@@ -276,9 +276,9 @@
           <section class="page-footer-nav">
             <div class="page-footer-btn">
               <p>Разделы сайта</p>
-              <button aria-label="Открыть/закрыть список"></button>
+              <button class="page-footer-button" aria-label="Открыть/закрыть список"></button>
             </div>
-            <ul class="page-footer__nav-list">
+            <ul class="page-footer__nav-list page-footer--closed">
               <li>О компании</li>
               <li>Продукты</li>
               <li>Производство печатных плат</li>
@@ -291,9 +291,9 @@
           <section class="page-footer-contacts">
             <div class="page-footer-btn">
               <p>Наш офис</p>
-              <button aria-label="Открыть/закрыть список"></button>
+              <button class="page-footer-btn__acc" aria-label="Открыть/закрыть список"></button>
             </div>
-            <ul class="page-footer-contacts__list">
+            <ul class="page-footer-contacts__list page-footer--closed">
               <li>г. Мытищи, Олимпийский проспект, д.10</li>
               <li>
                 <a href="tel:+74955894050">+7 (495) 589-40-50</a>
