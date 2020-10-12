@@ -1,16 +1,24 @@
 'use strict';
-var dots = document.querySelector('.about__dots');
-var more = document.querySelector('.about__more');
-var btnMoreText = document.querySelector('.about__btn');
+var popup = document.querySelector('.popup');
+var btnCall = document.querySelector('.navigation__contacts-call');
+var btnCloseForm = document.querySelector('.popup__btn-close');
 
-btnMoreText.addEventListener('click', function () {
-  if (more.style.display === 'none') {
-    dots.style.display = 'none';
-    btnMoreText.innerHTML = 'Подробнее';
-    more.display.style = 'block';
+btnCall.addEventListener('click', function () {
+  if (popup.classList.contains('.popup--closed')) {
+    popup.classList.remove('popup--closed');
+    popup.classList.add('popup--opened');
   } else {
-    dots.style.display = 'none';
-    btnMoreText.innerHTML = 'Скрыть';
-    more.display.style = 'block';
+    popup.classList.add('popup--closed');
+    popup.classList.remove('popup--opened');
+  }
+});
+
+btnCloseForm.addEventListener('click', function () {
+  if (popup.classList.contains('.popup--opened')) {
+    popup.classList.remove('.popup--opened');
+    popup.classList.add('popup--closed');
+  } else {
+    popup.classList.add('popup--opened');
+    popup.classList.remove('popup--closed');
   }
 });

@@ -234,11 +234,42 @@
           <fieldset class="questionary-form__btn-wrap">
             <button class="questionary-form__btn" type="submit" name="question">Задать вопрос</button>
             <div class="questionary-form__check-wrap">
-              <input type="checkbox" class="questionary-form__custom-checkbox" id="confidential-input" name="confidential" required>
+              <input type="checkbox" class="questionary-form__custom-checkbox" id="confidential-input"
+                name="confidential" required>
               <label for="confidential-input">Я согласен на обработку<br> персональных данных </label>
             </div>
           </fieldset>
         </form>
+      </section>
+      <section class="popup popup--opened">
+        <div class="popup__container">
+          <div class="popup__wrapper">
+            <h3 class="popup__title">Закажите звонок</h3>
+            <p class="popup__info">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+            <button class="popup__btn-close" type="submit" name="btn-close"></button>
+          </div>
+          <form class="popup-form" action="#" method="get">
+            <fieldset class="popup-form__input-wrap">
+              <label for="popup-form-username" class="visually-hidden"></label>
+              <input type="text" placeholder="Имя" name="username" id="popup-form-username" required>
+
+              <label for="popup-form-phone" class="visually-hidden"></label>
+              <input type="tel" placeholder="Телефон" name="phone" id="popup-form-phone" required>
+
+              <label for="popup-form-field" class="visually-hidden"></label>
+              <textarea name="popup-field" cols="30" rows="5" placeholder="Ваш вопрос" id="popup-form-field"
+                required></textarea>
+            </fieldset>
+            <fieldset class="popup-form__btn-wrap">
+              <button class="popup-form__btn" type="submit" name="popup">Отправить</button>
+              <div class="popup-form__check-wrap">
+                <input type="checkbox" class="popup-form__custom-checkbox" id="confidential-input" name="confidential"
+                  required>
+                <label for="confidential-input">Я согласен на обработку персональных данных </label>
+              </div>
+            </fieldset>
+          </form>
+        </div>
       </section>
     </main>
 

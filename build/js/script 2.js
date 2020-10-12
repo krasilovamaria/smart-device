@@ -14,11 +14,11 @@ btnCall.addEventListener('click', function () {
 });
 
 btnCloseForm.addEventListener('click', function () {
-  if (popup.classList.contains('.popup--opened')) {
+  if(popup.classList.contains('.popup--opened')) {
     popup.classList.remove('.popup--opened');
     popup.classList.add('popup--closed');
   } else {
     popup.classList.add('popup--opened');
     popup.classList.remove('popup--closed');
   }
-});
+};
