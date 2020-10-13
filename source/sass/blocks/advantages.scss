@@ -70,6 +70,35 @@
   }
 }
 
+//Tablet//
+@media (min-width: $tablet-width-min) and (max-width: $tablet-width-max) {
+  .advantages__list {
+    width: 97%;
+  }
+
+  .advantages__item {
+    padding-top: 26px;
+    height: 310px;
+
+    svg {
+      margin-bottom: 2px;
+    }
+
+    h3 {
+      font-family: $font-roboto;
+      font-weight: 400;
+    }
+
+    &--detective {
+      height: 244px;
+    }
+
+    &--tag {
+      height: 244px;
+    }
+  }
+}
+
 //Mobile//
 @media (min-width: $mobile-width-min) and (max-width: $mobile-width-max) {
   .advantages__list {

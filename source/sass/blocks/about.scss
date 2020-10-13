@@ -67,10 +67,10 @@
 //Tablet//
 @media (min-width: $tablet-width-min) and (max-width: $tablet-width-max) {
   .about__container {
-    padding-top: 5%;
+    padding-top: 0;
     padding-bottom: 10%;
-    padding-left: 30%;
-    padding-right: 10%;
+    padding-left: 28%;
+    padding-right: 3%;
 
     h3 {
       margin-bottom: 20px;
@@ -79,8 +79,8 @@
       &::before {
         content: "";
         position: absolute;
-        top: 12%;
-        left: 7%;
+        top: 2%;
+        left: 0;
         width: 244px;
         height: 364px;
         background-image: url("../img/2005-tablet@1x.png");
@@ -92,13 +92,13 @@
     }
 
     p {
-      margin-bottom: 15px;
+      margin-bottom: 20px;
       font-size: 16px;
       line-height: 22px;
     }
 
     button {
-      margin-top: 5px;
+      margin-top: 23px;
     }
   }
 

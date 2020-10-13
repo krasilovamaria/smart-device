@@ -1,3 +1,10 @@
 .page-main {
   padding-top: 5%;
 }
+
+//Tablet//
+@media (min-width: $tablet-width-min) and (max-width: $tablet-width-max) {
+  .page-main {
+    padding-top: 7%;
+  }
+}

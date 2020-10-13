@@ -129,7 +129,7 @@
 //Tablet//
 @media (min-width: $tablet-width-min) and (max-width: $tablet-width-max) {
   .promo {
-    height: 764px;
+    height: 610px;
     width: 100%;
   }
 
@@ -141,16 +141,17 @@
   }
 
   .promo__heading {
-    margin-top: 150px;
-    margin-bottom: 57px;
+    margin-top: 96px;
+    margin-left: 12px;
+    margin-bottom: 27px;
     width: 320px;
     font-size: 60px;
     line-height: 70px;
   }
 
   .promo__info {
-    margin-bottom: 65px;
-    padding-left: 48px;
+    margin-bottom: 56px;
+    padding-left: 62px;
     width: 400px;
     font-size: 18px;
     line-height: 28px;
@@ -161,7 +162,7 @@
       width: 33px;
       height: 2px;
       background-color: $white;
-      left: 0;
+      left: 10px;
       top: 15px;
     }
   }
@@ -170,7 +171,7 @@
     margin-left: 60px;
     padding: 17px;
     height: 55px;
-    width: 407px;
+    width: 384px;
   }
 
   .promo__button-mobile,
@@ -180,8 +181,8 @@
 
   .promo__img-container {
     position: absolute;
-    top: -25px;
-    left: 440px;
+    top: -50px;
+    left: 293px;
     width: 770px;
     height: 539px;
     background-image: url("../img/bg-triangles-tablet.svg");
