@@ -86,10 +86,6 @@
     margin-left: -10%;
   }
 
-  .page-footer-nav__header-button {
-    display: none;
-  }
-
   .page-footer-btn button {
     display: none;
   }
@@ -133,10 +129,6 @@
 
   .page-footer__text-years {
     text-transform: uppercase;
-  }
-
-  .page-footer-nav__header-button {
-    display: none;
   }
 
   .page-footer-btn button {
@@ -205,18 +197,26 @@
     align-items: center;
   }
 
-  .page-footer-btn button {
+  .page-footer__closed {
+    display: none;
+  }
+
+  .page-footer__opened {
+    display: block;
+  }
+
+  .page-footer-btn__sec,
+  .page-footer-btn__acc {
     @include button-reset;
     width: 16px;
     height: 16px;
     background-image: url("../img/icon-plus.svg");
-  }
 
-  .page-footer--closed {
-    display: none;
-  }
-
-  .page-footer--opened {
-    display: block;
+    &--opened {
+      @include button-reset;
+      width: 16px;
+      height: 2px;
+      background-image: url("../img/icon-minus.svg");
+    }
   }
 }
