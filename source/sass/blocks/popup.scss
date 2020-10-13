@@ -164,7 +164,7 @@
 .popup-form__btn {
   @include button-reset;
   display: inline-block;
-  vertical-align: center;
+  vertical-align: middle;
   padding: 15px 80px;
   font-family: $font-roboto;
   font-weight: bold;
@@ -202,6 +202,8 @@
 .popup-form__custom-checkbox + label::before {
   position: absolute;
   content: "";
+  display: inline-block;
+  vertical-align: middle;
   top: 6px;
   left: 0;
   width: 16px;
@@ -212,8 +214,10 @@
 .popup-form__custom-checkbox:checked + label::after {
   position: absolute;
   content: "";
+  display: inline-block;
+  vertical-align: middle;
   top: 6px;
-  left: -32px;
+  left: 0;
   width: 16px;
   height: 16px;
   background-image: url("../img/off-checkbox.svg");
@@ -224,7 +228,6 @@
   background-repeat: no-repeat;
   background-position: center;
 }
-
 
 //Mobile//
 @media (min-width: $mobile-width-min) and (max-width: $mobile-width-max) {

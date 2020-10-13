@@ -158,6 +158,8 @@
 .questionary-form__custom-checkbox + label::before {
   position: absolute;
   content: "";
+  display: inline-block;
+  vertical-align: center;
   top: 8px;
   left: -32px;
   width: 16px;
@@ -168,6 +170,8 @@
 .questionary-form__custom-checkbox:checked + label::after {
   position: absolute;
   content: "";
+  display: inline-block;
+  vertical-align: center;
   top: 8px;
   left: -32px;
   width: 16px;
@@ -248,5 +252,15 @@
     margin-left: 30px;
     font-size: 14px;
     line-height: 16px;
+  }
+
+  .questionary-form__custom-checkbox + label::before {
+    top: 8px;
+    left: 0;
+  }
+
+  .questionary-form__custom-checkbox:checked + label::after {
+    top: 8px;
+    left: 0;
   }
 }
