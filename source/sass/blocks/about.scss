@@ -113,20 +113,29 @@
 
 //Mobile//
 @media (min-width: $mobile-width-min) and (max-width: $mobile-width-max) {
+  .about {
+    h3 {
+      font-size: 28px;
+      line-height: 39px;
+      margin-bottom: 17px;
+    }
+  }
+
   .about__container {
-    padding-top: 5%;
+    padding-top: 12%;
     padding-bottom: 5%;
-    padding-left: 9%;
-    padding-right: 8%;
+    padding-left: 5%;
+    padding-right: 3%;
 
     p {
-      margin-bottom: 20px;
+      margin-bottom: 44px;
       font-size: 16px;
       line-height: 22px;
     }
 
     button {
-      margin-top: 10px;
+      margin-top: -16px;
+      margin-bottom: 47px;
     }
   }
 

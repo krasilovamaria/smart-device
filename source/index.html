@@ -64,15 +64,17 @@
             <div class="promo__wrap-container">
               <h2 class="promo__heading">Печатные платы</h2>
               <p class="promo__info">производство и монтаж, поставка комплектующих, блоков и модулей</p>
-              <a class="promo__button" href="#questionary" aria-label="consultation">Получить бесплатную консультацию</a>
+              <a class="promo__button" href="#questionary" aria-label="consultation">Получить бесплатную
+                консультацию</a>
               <a class="promo__button-mobile" href="#">Бесплатная консультация</a>
               <a class="promo__scroll" href="#advantages" aria-label="scroll">Скролл вниз</a>
             </div>
             <div class="promo__img-container">
               <picture>
-                <source media="(min-width: 1300px)" srcset="img/cards-desktop.png">
-                <source media="(min-width: 768px)" srcset="img/cards-tablet.png">
-                <img class="promo__img-cards" src="img/cards-mobile.png" alt="Изображение печатных карт">
+                <source media="(min-width: 1300px)" srcset="img/cards-desktop@1x.png 1x, img/cards-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/cards-tablet@1x.png 1x, img/cards-tablet@2x.png 2x">
+                <img class="promo__img-cards" src="img/cards-mobile@1x.png" srcset="img/cards-mobile@2x.png 2x"
+                  alt="Изображение печатных карт">
               </picture>
             </div>
           </div>
@@ -87,7 +89,7 @@
         <h2 class="visually-hidden">Преимущества</h2>
         <div class="advantages__container">
           <ul class="advantages__list">
-            <li class="advantages__item">
+            <li class="advantages__item advantages__item--stopwatch">
               <div class="advantages__image">
                 <svg width="30" height="37" viewBox="0 0 30 37" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -104,7 +106,7 @@
               <p>Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и
                 доставлять заказы плат и комплектующих в самые короткие сроки.</p>
             </li>
-            <li class="advantages__item">
+            <li class="advantages__item advantages__item--hired">
               <div class="advantages__image">
                 <svg width="32" height="33" viewBox="0 0 32 33" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -124,7 +126,7 @@
                 HOLGLITRONIC, REFOND. Сотрудничество с такими компаниями обеспичивает хорошее качество нашей продукции.
               </p>
             </li>
-            <li class="advantages__item">
+            <li class="advantages__item advantages__item--detective">
               <div class="advantages__image">
                 <svg width="31" height="27" viewBox="0 0 31 27" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -142,7 +144,7 @@
               <h3>Полная конфиденциальность</h3>
               <p>По желанию клиента мы обеспечиваем полную конфеденциальность.</p>
             </li>
-            <li class="advantages__item">
+            <li class="advantages__item advantages__item--tag">
               <div class="advantages__image">
                 <svg width="33" height="33" viewBox="0 0 33 33" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -212,15 +214,15 @@
       </section>
       <section class="questionary" id="questionary">
         <div class="questionary__img-wrap">
-          <img src="img/paper-airplane@1px.png" srcset="img/paper-airplane@1px.png 1x, img/paper-airplane@2px.png 2x"
-            alt="paper-airplane" width="511" height="288">
+            <img src="img/paper-airplane@1px.png" srcset="img/paper-airplane@1px.png 1x, img/paper-airplane@2px.png 2x"
+              alt="paper-airplane" width="511" height="288">
         </div>
         <div class="questionary__wrapper">
           <h3 class="questionary__title">Остались вопросы? Задайте их нам!</h3>
           <p class="questionary__info">Мы проконсультируем Вас бесплатно</p>
         </div>
         <form class="questionary-form" action="#" method="get">
-          <fieldset class="questionary-form__input-wrap">
+          <div class="questionary-form__input-wrap">
             <label for="questionary-form-username" class="visually-hidden"></label>
             <input type="text" placeholder="Имя" name="username" id="questionary-form-username" required>
 
@@ -230,15 +232,15 @@
             <label for="questionary-form-field" class="visually-hidden"></label>
             <textarea name="question-field" cols="30" rows="7" placeholder="Ваш вопрос" id="questionary-form-field"
               required></textarea>
-          </fieldset>
-          <fieldset class="questionary-form__btn-wrap">
+          </div>
+          <div class="questionary-form__btn-wrap">
             <button class="questionary-form__btn" type="submit" name="question">Задать вопрос</button>
             <div class="questionary-form__check-wrap">
               <input type="checkbox" class="questionary-form__custom-checkbox" id="confidential-input"
                 name="confidential" required>
               <label for="confidential-input">Я согласен на обработку<br> персональных данных </label>
             </div>
-          </fieldset>
+          </div>
         </form>
       </section>
       <section class="popup popup--closed">
@@ -249,7 +251,7 @@
             <button class="popup__btn-close" type="submit" name="btn-close"></button>
           </div>
           <form class="popup-form" id="popup-form" action="#" method="get">
-            <fieldset class="popup-form__input-wrap">
+            <div class="popup-form__input-wrap">
               <label for="popup-form-username" class="visually-hidden"></label>
               <input type="text" placeholder="Имя" name="username" id="popup-form-username" required>
 
@@ -259,15 +261,14 @@
               <label for="popup-form-field" class="visually-hidden"></label>
               <textarea name="popup-field" cols="20" rows="5" placeholder="Ваш вопрос" id="popup-form-field"
                 required></textarea>
-            </fieldset>
-            <fieldset class="popup-form__btn-wrap">
+            </div>
+            <div class="popup-form__btn-wrap">
               <button class="popup-form__btn" type="submit" name="popup">Отправить</button>
               <div class="popup-form__check-wrap">
-                <input type="checkbox" class="popup-form__custom-checkbox" id="popup-conf" name="popup-conf"
-                  required>
+                <input type="checkbox" class="popup-form__custom-checkbox" id="popup-conf" name="popup-conf" required>
                 <label for="popup-conf">Я согласен на обработку персональных данных </label>
               </div>
-            </fieldset>
+            </div>
           </form>
         </div>
       </section>

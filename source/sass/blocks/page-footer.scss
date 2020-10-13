@@ -143,7 +143,7 @@
     flex-direction: column;
     align-items: center;
     padding-top: 14%;
-    padding-bottom: 15%;
+    padding-bottom: 14%;
     padding-left: 3%;
     padding-right: 1%;
     border-bottom: 1px solid $white-grey-line;
@@ -159,14 +159,14 @@
   }
 
   .page-footer__text-years {
-    margin-bottom: 10%;
+    margin-bottom: 0;
     font-size: 14px;
   }
 
   .page-footer-nav {
     padding-top: 7%;
-    padding-bottom: 5%;
-    padding-left: 4%;
+    padding-bottom: 7%;
+    padding-left: 6%;
     padding-right: 4%;
     border-bottom: 1px solid $white-grey-line;
 
@@ -176,9 +176,9 @@
   }
 
   .page-footer-contacts {
-    padding-top: 9%;
-    padding-bottom: 5%;
-    padding-left: 4%;
+    padding-top: 7%;
+    padding-bottom: 7%;
+    padding-left: 6%;
     padding-right: 4%;
 
     p {
@@ -188,7 +188,7 @@
 
   .page-footer__nav-list,
   .page-footer-contacts__list {
-    padding-top: 5%;
+    padding-top: 8%;
   }
 
   .page-footer-btn {

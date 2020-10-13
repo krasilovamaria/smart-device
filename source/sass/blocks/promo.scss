@@ -196,7 +196,7 @@
 //Mobile//
 @media (min-width: $mobile-width-min) and (max-width: $mobile-width-max) {
   .promo {
-    height: 646px;
+    height: 590px;
   }
 
   .promo__button,
@@ -213,8 +213,8 @@
 
   .promo__img-container {
     position: absolute;
-    top: -15px;
-    left: 140px;
+    top: -22px;
+    left: 150px;
     width: 675px;
     height: 495px;
     background-image: url("../img/bg-triangles-mobile.svg");
@@ -227,8 +227,8 @@
 
   .promo__heading {
     position: relative;
-    margin-top: 215px;
-    margin-bottom: 45px;
+    margin-top: 207px;
+    margin-bottom: 29px;
     font-size: 40px;
     line-height: 47px;
     z-index: 2;
@@ -236,11 +236,11 @@
 
   .promo__info {
     position: relative;
-    margin-bottom: 48px;
+    margin-bottom: 38px;
     padding-left: 48px;
     min-width: 274px;
     font-size: 16px;
-    line-height: 28px;
+    line-height: 25px;
 
     &::after {
       content: "";

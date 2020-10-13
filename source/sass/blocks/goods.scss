@@ -164,12 +164,19 @@
   .goods {
     background-color: $dark-blue;
     color: $white;
+    padding: 16% 4%;
+    padding-bottom: 11%;
 
     h2 {
       padding-left: 10px;
-      margin-bottom: 45px;
+      margin-bottom: 41px;
       font-size: 28px;
       line-height: 39px;
+    }
+
+    p {
+      top: 8%;
+      left: 12%;
     }
   }
 

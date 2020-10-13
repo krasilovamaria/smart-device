@@ -126,7 +126,7 @@
   @include button-reset;
   display: inline-block;
   vertical-align: center;
-  padding: 15px 80px;
+  padding: 15px 70px;
   font-family: $font-roboto;
   font-weight: bold;
   font-size: 14px;
@@ -137,12 +137,12 @@
   color: $white;
   border: 1px solid $white;
   border-radius: 5px;
-  margin-right: 70px;
 }
 
 .questionary-form__check-wrap {
   position: relative;
   padding-top: 5px;
+  margin-left: 60px;
 }
 
 .questionary-form__custom-checkbox {
@@ -155,6 +155,7 @@
   display: inline-flex;
   align-items: center;
   user-select: none;
+  margin-left: 5px;
 }
 
 .questionary-form__custom-checkbox + label::before {
@@ -208,17 +209,39 @@
 //Mobile//
 @media (min-width: $mobile-width-min) and (max-width: $mobile-width-max) {
   .questionary {
-    padding: 10% 12%;
+    padding: 9% 4%;
   }
 
   .questionary__title {
     font-size: 28px;
     line-height: 39px;
+    margin-bottom: 7px;
   }
 
   .questionary__info {
     font-size: 16px;
     line-height: 22px;
+    margin-bottom: 20px;
+  }
+
+  .questionary-form__input-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border: none;
+    width: 40%;
+    margin-left: auto;
+    margin-right: 10%;
+    padding: 0;
+
+    input {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+
+    textarea {
+      height: 98px;
+    }
   }
 
   .questionary__img-wrap {
@@ -232,12 +255,6 @@
     width: 100%;
   }
 
-  .questionary-form__input-wrap {
-    input {
-      width: 100%;
-    }
-  }
-
   .questionary-form__btn-wrap {
     display: flex;
     flex-direction: column;
@@ -245,9 +262,14 @@
 
   .questionary-form__btn {
     width: 100%;
-    padding-right: 40px;
-    padding-left: 40px;
+    padding: 13px 40px;
     margin-bottom: 30px;
+  }
+
+  .questionary-form__check-wrap {
+    margin-top: 0;
+    margin-left: 3px;
+    margin-bottom: 10px;
   }
 
   .questionary-form__custom-checkbox + label {
@@ -257,12 +279,12 @@
   }
 
   .questionary-form__custom-checkbox + label::before {
-    top: 8px;
+    top: 5px;
     left: 0;
   }
 
   .questionary-form__custom-checkbox:checked + label::after {
-    top: 8px;
+    top: 5px;
     left: 0;
   }
 }
