@@ -105,11 +105,15 @@
   }
 
   .page-footer-links {
-    padding-top: 2.5%;
+    padding-top: 15px;
     padding-left: 3%;
     padding-right: 1%;
     padding-bottom: 2%;
     border-bottom: 1px solid $white-grey-line;
+  }
+
+  .page-footer__social-list {
+    margin-top: -20px;
   }
 
   .page-footer-nav p,

@@ -112,22 +112,26 @@
 @media (min-width: $tablet-width-min) and (max-width: $tablet-width-max) {
   .goods {
     padding: 7% 3%;
+    padding-top: 55px;
+    padding-bottom: 11px;
 
     h2 {
       font-size: 32px;
       line-height: 48px;
-      width: 630px;
       margin: -3px 0 5%;
+      width: 620px;
     }
 
     p {
-      top: 20%;
-      left: 5%;
+      top: 36px;
+      left: 45px;
     }
   }
 
   .goods__list {
     flex-direction: column;
+    margin-top: 50px;
+    padding-bottom: 20px;
   }
 
   .goods__item-wrapper {

@@ -73,12 +73,14 @@
 //Tablet//
 @media (min-width: $tablet-width-min) and (max-width: $tablet-width-max) {
   .advantages__list {
-    width: 97%;
+    width: 99%;
   }
 
   .advantages__item {
     padding-top: 26px;
+    padding-right: 10px;
     height: 310px;
+    margin-right: 20px;
 
     svg {
       margin-bottom: 2px;
@@ -87,6 +89,7 @@
     h3 {
       font-family: $font-roboto;
       font-weight: 400;
+      margin-bottom: 10px;
     }
 
     &--detective {
