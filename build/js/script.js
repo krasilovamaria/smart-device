@@ -126,6 +126,15 @@ popup.addEventListener('submit', function (evt) {
   }
 });
 
+var questionaryForm = document.querySelector('.questionary-form');
+var questionaryField = popup.querySelector('[name=questionary-field]');
+
+questionaryForm.addEventListener('submit', function () {
+  localStorage.setItem('username', username.value);
+  localStorage.setItem('phone', phone.value);
+  localStorage.setItem('questionaryField', questionaryField.value);
+});
+
 // Маска
 jQuery(function ($) {
   $('input[type=tel]').mask('+ 7 (999) 999-9999');

@@ -116,14 +116,19 @@ var username = popup.querySelector('[name=username]');
 var phone = popup.querySelector('[name=phone]');
 var popupField = popup.querySelector('[name=popup-field]');
 
-popup.addEventListener('submit', function (evt) {
-  if (!username.value || !phone.value || !popupField.value) {
-    evt.preventDefault();
-  } else {
-    localStorage.setItem('username', username.value);
-    localStorage.setItem('phone', phone.value);
-    localStorage.setItem('popupField', popupField.value);
-  }
+popup.addEventListener('submit', function () {
+  localStorage.setItem('username', username.value);
+  localStorage.setItem('phone', phone.value);
+  localStorage.setItem('popupField', popupField.value);
+});
+
+var questionaryForm = document.querySelector('.questionary-form');
+var questionaryField = popup.querySelector('[name=questionary-field]');
+
+questionaryForm.addEventListener('submit', function () {
+  localStorage.setItem('username', username.value);
+  localStorage.setItem('phone', phone.value);
+  localStorage.setItem('questionaryField', questionaryField.value);
 });
 
 // Маска
