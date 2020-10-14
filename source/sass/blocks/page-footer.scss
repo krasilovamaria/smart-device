@@ -13,7 +13,6 @@
   background-color: $white-grey;
 }
 
-
 .page-footer__social-list svg {
   margin-top: 2rem;
   margin-right: 1rem;
@@ -23,8 +22,12 @@
   color: $white-grey-font;
 }
 
-.page-footer-nav p,
-.page-footer-contacts p {
+.page-footer__nav-list a {
+  color: $white-grey-font;
+}
+
+.page-footer-nav h4,
+.page-footer-contacts h4 {
   margin: 0;
   margin-bottom: 15px;
   padding: 0;
@@ -116,8 +119,8 @@
     margin-top: -20px;
   }
 
-  .page-footer-nav p,
-  .page-footer-contacts p {
+  .page-footer-nav h4,
+  .page-footer-contacts h4 {
     margin-top: 22px;
     margin-bottom: 21px;
   }

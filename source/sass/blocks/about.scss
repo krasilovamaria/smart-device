@@ -60,10 +60,6 @@
   }
 }
 
-.about__dots {
-  display: none;
-}
-
 //Tablet//
 @media (min-width: $tablet-width-min) and (max-width: $tablet-width-max) {
   .about__container {
@@ -102,10 +98,6 @@
     }
   }
 
-  .about__dots {
-    display: inline;
-  }
-
   .about__more {
     display: none;
   }
@@ -139,15 +131,7 @@
     }
   }
 
-  .about__more {
+  .about__more::before {
     display: none;
-  }
-
-  &::before {
-    display: none;
-  }
-
-  .about__dots {
-    display: inline;
   }
 }

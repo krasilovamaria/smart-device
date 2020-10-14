@@ -7,54 +7,86 @@
   @include flex-row;
 }
 
-.navigation__contacts-call,
-.navigation__contacts-list-item-link span {
-  display: none;
-}
-
-.navigation__contacts-list-item-link svg {
+.navigation-img-mail::before {
+  content: "";
+  width: 26px;
+  height: 19px;
   margin-left: 1.2rem;
+  background-image: url("../img/icon-mail.svg");
 }
 
-//Desktop//
-@media (min-width: $desktop-width-min) {
-  // only Desktop
-  .navigation__contacts-call {
-    @include button-reset;
-    display: block;
-    width: 180px;
-    height: 45px;
+.navigation-img-mobile::before {
+  content: "";
+  width: 25px;
+  height: 24px;
+  margin-left: 1.2rem;
+  background-image: url("../img/icon-mobile.svg");
+}
 
-    @include font-nav;
-    text-align: center;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    color: $white;
-    border: 1px solid $white;
-    box-sizing: border-box;
-    border-radius: 5px;
-  }
-  // only Desktop
-  .navigation__contacts-list-item-link {
-    @include flex-row;
-    color: $white;
-    margin-right: 5rem;
-  }
+// only Desktop
+.navigation__contacts-call {
+  @include button-reset;
+  display: block;
+  width: 180px;
+  height: 45px;
 
-  // only Desktop
-  .navigation__contacts-list-item-link span {
-    display: block;
-    margin-left: 1rem;
-  }
+  @include font-nav;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $white;
+  border: 1px solid $white;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+// only Desktop
+.navigation__contacts-list-item-link {
+  @include flex-row;
+  color: $white;
+  margin-right: 5rem;
+}
 
-  .navigation__contacts-list-item-link svg {
-    margin-left: none;
-  }
+// only Desktop
+.navigation__contacts-list-item-link span {
+  margin-left: 1rem;
 }
 
 //Tablet//
 @media (min-width: $tablet-width-min) and (max-width: $tablet-width-max) {
   .navigation__contacts-list-item-link svg {
     margin-left: 2rem;
+  }
+
+  .navigation__contacts-call,
+  .navigation__contacts-list-item-link span {
+    display: none;
+  }
+
+  .navigation-img-mail::before {
+    margin-left: 27rem;
+  }
+
+  .navigation-img-mobile::before {
+    margin-left: -3rem;
+  }
+}
+
+//Mobile//
+@media (min-width: $mobile-width-min) and (max-width: $mobile-width-max) {
+  .page-header {
+    background-image: url("../img/bg-mask-mobile.png");
+  }
+
+  .navigation__contacts-call,
+  .navigation__contacts-list-item-link span {
+    display: none;
+  }
+
+  .navigation-img-mail::before {
+    margin-left: 177px;
+  }
+
+  .navigation-img-mobile::before {
+    margin-left: -55px;
   }
 }
