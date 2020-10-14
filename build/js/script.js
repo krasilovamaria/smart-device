@@ -125,3 +125,8 @@ popup.addEventListener('submit', function (evt) {
     localStorage.setItem('popupField', popupField.value);
   }
 });
+
+// Маска
+$(document).ready(function () {
+  $('phone').mask('+7 (999) 999 99 99', {placeholder: '+_ (___) ___ __ __'});
+});
