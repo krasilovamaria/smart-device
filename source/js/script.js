@@ -127,6 +127,6 @@ popup.addEventListener('submit', function (evt) {
 });
 
 // Маска
-$(function () {
-  $('#questionary-form-phone').mask('+7 (999) 999 99 99', {placeholder: '+_ (___) ___ __ __'});
+jQuery(function ($) {
+  $('input[type=tel]').mask('+ 7 (999) 999-9999');
 });
