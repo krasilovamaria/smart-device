@@ -20,7 +20,8 @@
           <a href="#" class="page-header__logo">
             <picture>
               <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-              <img class="page-header__logo-image" src="img/logo-mobile.svg" alt="Логотип Smart Device" width="25" height="24">
+              <img class="page-header__logo-image" src="img/logo-mobile.svg" alt="Логотип Smart Device" width="25"
+                height="24">
             </picture>
           </a>
 
@@ -50,20 +51,27 @@
             </div>
             <div class="promo__img-container">
               <picture>
+                <source type="image/webp" media="(min-width: 320px)" srcset="img/cards-mobile@1x.webp 1x, img/cards-mobile@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/cards-tablet@1x.webp 1x, img/cards-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/cards-desktop@1x.webp 1x, img/cards-desktop@2x.webp 2x">
+
+                <source  media="(min-width: 320px)" srcset="img/cards-mobile@1x.png 1x, img/cards-mobile@2x.png 2x">
+                <source  media="(min-width: 768px)" srcset="img/cards-tablet@1x.png 1x, img/cards-tablet@2x.png 2x">
+
+                <img class="promo__img-cards" src="img/cards-desktop@1x.png" srcset="img/cards-desktop@2x.png 2x"
+                width="705" height="515" alt="Изображение печатных карт">
+              </picture>
+              <!-- <picture>
                 <source type="image/webp" media="(min-width: 1300px)" srcset="img/cards-desktop@1x.webp 1x, img/cards-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 768px)" srcset="img/cards-tablet@1x.webp 1x, img/cards-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/cards-mobile@1x.webp 1x, img/cards-mobile@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 320px)" srcset="img/cards-mobile@1x.webp 1x, img/cards-mobile@2x.webp 2x">
 
                 <source media="(min-width: 1300px)" srcset="img/cards-desktop@1x.png 1x,img/cards-desktop@2x.png 2x">
                 <source media="(min-width: 768px)" srcset="img/cards-tablet@1x.png 1x,img/cards-tablet@2x.png 2x">
-                <img class="main-content__image" src="img/cards-mobile@1x.png" srcset="img/cards-mobile@2x.png 2x" width="294" height="220"
-                 alt="Изображение печатных карт">
-              </picture>
-              <!-- <picture>
-                <source media="(min-width: 1300px)" srcset="img/cards-desktop@1x.png 1x, img/cards-desktop@2x.png 2x">
-                <source media="(min-width: 768px)" srcset="img/cards-tablet@1x.png 1x, img/cards-tablet@2x.png 2x">
-                <img class="promo__img-cards" src="img/cards-mobile@1x.png" srcset="img/cards-mobile@2x.png 2x"
-                  width="294" height="220" alt="Изображение печатных карт">
+
+                <img class="main-content__image" srcset="img/cards-mobile@1x.png 294w, img/cards-tablet@1x.png 465w, img/cards-desktop@1x.png 705w"
+                     sizes="(min-width: 320px) 296px,(min-width: 768px) 465px,(min-width: 1300px) 705px"
+                     src="img/cards-mobile@1x.png" alt="Изображение печатных карт">
               </picture> -->
             </div>
           </div>
