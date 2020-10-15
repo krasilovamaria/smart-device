@@ -5,14 +5,12 @@
   background-image: url("../img/bg-mask-desktop.png");
 }
 
-//Tablet//
 @media (min-width: $tablet-width-min) and (max-width: $tablet-width-max) {
   .page-header {
     background-image: url("../img/bg-mask-tablet.png");
   }
 }
 
-//Mobile//
 @media (min-width: $mobile-width-min) and (max-width: $mobile-width-max) {
   .page-header {
     background-image: url("../img/bg-mask-mobile.png");

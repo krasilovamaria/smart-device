@@ -108,7 +108,6 @@
   }
 }
 
-//Tablet//
 @media (min-width: $tablet-width-min) and (max-width: $tablet-width-max) {
   .goods {
     padding: 7% 3%;
@@ -169,7 +168,6 @@
   }
 }
 
-//Mobile//
 @media (min-width: $mobile-width-min) and (max-width: $mobile-width-max) {
   .goods {
     background-color: $dark-blue;

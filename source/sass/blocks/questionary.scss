@@ -188,7 +188,6 @@
   background-position: center;
 }
 
-//Tablet//
 @media (min-width: $tablet-width-min) and (max-width: $tablet-width-max) {
   .questionary {
     padding: 10% 12%;
@@ -280,7 +279,6 @@
   }
 }
 
-//Mobile//
 @media (min-width: $mobile-width-min) and (max-width: $mobile-width-max) {
   .questionary {
     padding: 9% 4%;

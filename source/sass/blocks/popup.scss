@@ -1,4 +1,3 @@
-//Desktop//
 @media (min-width: $desktop-width-min) {
   .popup--closed {
     display: none;
@@ -232,14 +231,12 @@
   }
 }
 
-//Tablet//
 @media (min-width: $tablet-width-min) and (max-width: $tablet-width-max) {
   .popup {
     display: none;
   }
 }
 
-//Mobile//
 @media (min-width: $mobile-width-min) and (max-width: $mobile-width-max) {
   .popup {
     display: none;

@@ -60,7 +60,6 @@
   }
 }
 
-//Tablet//
 @media (min-width: $tablet-width-min) and (max-width: $tablet-width-max) {
   .about__container {
     padding-top: 0;
@@ -103,7 +102,6 @@
   }
 }
 
-//Mobile//
 @media (min-width: $mobile-width-min) and (max-width: $mobile-width-max) {
   .about {
     h3 {

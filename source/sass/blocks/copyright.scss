@@ -11,7 +11,6 @@
   line-height: 24px;
 }
 
-//Desktop//
 @media (min-width: $desktop-width-min) {
   .copyright-wrap {
     padding-top: 1%;
@@ -33,7 +32,6 @@
   }
 }
 
-//Tablet// and //Mobile//
 @media (min-width: $tablet-width-min) and (max-width: $tablet-width-max) {
   .copyright__text-rights,
   .copyright__text-years {
@@ -48,7 +46,6 @@
   }
 }
 
-//Mobile//
 @media (min-width: $mobile-width-min) and (max-width: $mobile-width-max) {
   .copyright__text-rights,
   .copyright__text-years {

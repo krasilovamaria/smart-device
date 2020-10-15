@@ -23,7 +23,6 @@
   background-image: url("../img/icon-mobile.svg");
 }
 
-// only Desktop
 .navigation__contacts-call {
   @include button-reset;
   display: block;
@@ -39,19 +38,17 @@
   box-sizing: border-box;
   border-radius: 5px;
 }
-// only Desktop
+
 .navigation__contacts-list-item-link {
   @include flex-row;
   color: $white;
   margin-right: 5rem;
 }
 
-// only Desktop
 .navigation__contacts-list-item-link span {
   margin-left: 1rem;
 }
 
-//Tablet//
 @media (min-width: $tablet-width-min) and (max-width: $tablet-width-max) {
   .navigation__contacts-list-item-link svg {
     margin-left: 2rem;
@@ -71,7 +68,6 @@
   }
 }
 
-//Mobile//
 @media (min-width: $mobile-width-min) and (max-width: $mobile-width-max) {
   .page-header {
     background-image: url("../img/bg-mask-mobile.png");

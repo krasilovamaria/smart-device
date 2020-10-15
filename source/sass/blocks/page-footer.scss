@@ -44,7 +44,6 @@
   display: flex;
 }
 
-//Desktop//
 @media (min-width: $desktop-width-min) {
   .page-footer-wrap,
   .page-footer__social-list {
@@ -94,7 +93,6 @@
   }
 }
 
-//Tablet//
 @media (min-width: $tablet-width-min) and (max-width: $tablet-width-max) {
   .page-footer-wrap {
     display: flex;
@@ -143,7 +141,6 @@
   }
 }
 
-//Mobile//
 @media (min-width: $mobile-width-min) and (max-width: $mobile-width-max) {
   .page-footer-links {
     display: flex;
