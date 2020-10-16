@@ -81,7 +81,7 @@
         background-image: url("../img/2005-tablet@1x.png");
 
         @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-          background-image: url("../img/2005-tabletp@2x.png");
+          background-image: url("../img/2005-tablet@2x.png");
         }
       }
     }
@@ -116,6 +116,12 @@
     padding-bottom: 5%;
     padding-left: 5%;
     padding-right: 3%;
+
+    h3 {
+      &::before {
+        display: none;
+      }
+    }
 
     p {
       margin-bottom: 44px;

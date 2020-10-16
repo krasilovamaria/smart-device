@@ -39,16 +39,6 @@
 .promo__info {
   margin: 0;
   position: relative;
-
-  &::before {
-    content: "";
-    position: absolute;
-    width: 66px;
-    height: 2px;
-    background-color: $white;
-    left: 0;
-    top: 15px;
-  }
 }
 
 @media (min-width: $desktop-width-min) {
