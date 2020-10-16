@@ -5,6 +5,7 @@
 .navigation__contacts-list {
   @include list-reset;
   @include flex-row;
+  flex-wrap: wrap;
 }
 
 .navigation-img-mail::before {
@@ -50,39 +51,23 @@
 }
 
 @media (min-width: $tablet-width-min) and (max-width: $tablet-width-max) {
-  .navigation__contacts-list-item-link svg {
-    margin-left: 2rem;
-  }
-
   .navigation__contacts-call,
   .navigation__contacts-list-item-link span {
     display: none;
   }
 
-  .navigation-img-mail::before {
-    margin-left: 27rem;
-  }
-
-  .navigation-img-mobile::before {
-    margin-left: -3rem;
+  .navigation__contacts-list-item-link {
+    margin-right: 0;
   }
 }
 
 @media (min-width: $mobile-width-min) and (max-width: $mobile-width-max) {
-  .page-header {
-    background-image: url("../img/bg-mask-mobile.png");
-  }
-
   .navigation__contacts-call,
   .navigation__contacts-list-item-link span {
     display: none;
   }
 
-  .navigation-img-mail::before {
-    margin-left: 177px;
-  }
-
-  .navigation-img-mobile::before {
-    margin-left: -55px;
+  .navigation__contacts-list-item-link {
+    margin-right: 0;
   }
 }
