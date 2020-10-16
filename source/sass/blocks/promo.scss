@@ -118,6 +118,11 @@
     width: 6171px;
     height: 641px;
     background-image: url("../img/bg-triangles-desktop.svg");
+
+    img {
+      width: 705px;
+      height: 515px;
+    }
   }
 
   .promo__img-cards {
@@ -186,6 +191,8 @@
     background-image: url("../img/bg-triangles-tablet.svg");
 
     img {
+      width: 465px;
+      height: 340px;
       margin-top: 80px;
       margin-left: 210px;
     }
@@ -218,6 +225,8 @@
     background-image: url("../img/bg-triangles-mobile.svg");
 
     img {
+      width: 296px;
+      height: 220px;
       margin-top: 70px;
       margin-left: -130px;
     }
