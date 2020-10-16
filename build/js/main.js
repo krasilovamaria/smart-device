@@ -120,6 +120,4 @@ questionaryForm.addEventListener('submit', function () {
   localStorage.setItem('questionaryField', questionaryField.value);
 });
 
-jQuery(function ($) {
-  $('input[type=tel]').mask('+ 7 (999) 999-9999');
-});
+$('input[type=tel]').mask('+ 7 (999) 999-9999');
