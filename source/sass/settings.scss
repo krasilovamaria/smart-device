@@ -54,9 +54,29 @@ input[type="radio"].visually-hidden {
   @include flex-row;
   justify-content: space-between;
   width: 100%;
-  padding-top: 2.5%;
-  padding-left: 3%;
-  padding-right: 3%;
+  padding-top: 1.7%;
+  padding-left: 13%;
+  padding-right: 13.5%;
+}
+
+button:hover,
+a:not(.page-header__logo):hover {
+  opacity: 0.8;
+}
+
+button:active,
+button:focus,
+a:not(.page-header__logo):active,
+a:not(.page-header__logo):focus {
+  opacity: 0.8;
+}
+
+@media (min-width: $tablet-width-min) and (max-width: $tablet-width-max) {
+  .wrap-header {
+    padding-top: 2.5%;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
 }
 
 @media (min-width: $mobile-width-min) and (max-width: $mobile-width-max) {

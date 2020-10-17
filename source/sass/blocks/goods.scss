@@ -1,14 +1,16 @@
 .goods {
   background-color: $dark-blue;
   color: $white;
-  padding: 5% 12%;
+  padding: 0 19.5%;
+  padding-top: 90px;
+  padding-bottom: 112px;
   font-family: $font-roboto;
   font-weight: 400;
   width: 100%;
 
   h2 {
     margin: 0;
-    margin-bottom: 5%;
+    margin-bottom: 50px;
     font-weight: 400;
     font-size: 36px;
     line-height: 51px;
@@ -21,8 +23,9 @@
   p {
     position: absolute;
     margin: 0;
-    top: 10%;
-    left: 5%;
+    top: 8%;
+    left: 12%;
+    width: 170px;
     font-size: 20px;
     line-height: 30px;
   }

@@ -1,9 +1,9 @@
 .about__container {
   margin: 0 auto;
-  padding-top: 5%;
-  padding-left: 25%;
+  padding-top: 45px;
+  padding-left: 29%;
   padding-right: 15%;
-  padding-bottom: 5%;
+  padding-bottom: 110px;
   display: flex;
   position: relative;
   flex-direction: column;
@@ -12,19 +12,19 @@
 
   p {
     margin: 0;
-    margin-bottom: 35px;
+    margin-bottom: 30px;
+    width: 91%;
     color: $grey-font;
   }
 
-  button {
-    @include button-reset;
+  a {
     display: inline-block;
     vertical-align: middle;
     font-family: $font-roboto;
     width: 180px;
     height: 45px;
     padding: 12px 50px;
-    margin-top: 40px;
+    margin-top: 20px;
     font-size: 14px;
     line-height: 16px;
     text-align: center;
@@ -37,7 +37,7 @@
 
   h3 {
     margin: 0;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     font-family: $font-roboto;
     font-weight: 400;
     font-size: 36px;
@@ -47,14 +47,14 @@
     &::before {
       content: "";
       position: absolute;
-      top: 12%;
-      left: 10%;
+      top: 10%;
+      left: 18%;
       width: 220px;
       height: 317px;
       background-image: url("../img/2005-desktop@1x.png");
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("../img/2005-desktop@2x.png");
+        background-image: url("../img/2005-desktop@2x.png") 220px 317px;
       }
     }
   }
@@ -92,7 +92,7 @@
       line-height: 22px;
     }
 
-    button {
+    a {
       margin-top: 23px;
     }
   }
