@@ -60,14 +60,17 @@ input[type="radio"].visually-hidden {
 }
 
 button:hover,
-a:not(.page-header__logo):hover {
+a:not(.page-header__logo):hover,
+a:not(.page-footer__logo-image):hover {
   opacity: 0.8;
 }
 
 button:active,
 button:focus,
 a:not(.page-header__logo):active,
-a:not(.page-header__logo):focus {
+a:not(.page-header__logo):focus,
+a:not(.page-footer__logo-image):active,
+a:not(.page-footer__logo-image):focus {
   opacity: 0.8;
 }
 

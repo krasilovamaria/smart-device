@@ -5,15 +5,15 @@
   color: $white;
   background-color: $blue;
   padding-top: 92px;
-  padding-bottom: 110px;
   width: 100%;
 }
 
 .questionary__img-wrap {
   position: relative;
+  height: 578px;
   width: 50%;
   background-repeat: no-repeat;
-  background-position: 61% 115%;
+  background-position: 61% 244%;
   background-image: url("../img/bg-triangles-desktop.svg");
 
   img {

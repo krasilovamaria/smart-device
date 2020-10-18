@@ -14,7 +14,7 @@
 }
 
 .page-footer__social-list svg {
-  margin-top: 2rem;
+  margin-top: 45px;
   margin-right: 1rem;
 }
 
@@ -32,6 +32,9 @@
   margin-bottom: 15px;
   padding: 0;
   font-family: $font-roboto;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 16px;
   text-transform: uppercase;
   color: $dark-blue-font;
 }
@@ -45,26 +48,33 @@
 }
 
 @media (min-width: $desktop-width-min) {
-  .page-footer-wrap,
   .page-footer__social-list {
     @include flex;
   }
 
   .page-footer-wrap {
-    width: 100%;
-    padding-top: 5%;
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-bottom: 2%;
-  }
-
-  .page-footer-container {
     display: flex;
+    width: 100%;
+    padding-top: 66px;
+    padding-left: 13%;
+    padding-right: 13%;
+    padding-bottom: 3%;
   }
 
   .page-footer-links {
     padding: 0;
-    margin-right: 10%;
+    margin: 0;
+    margin-right: 15%;
+  }
+
+  .page-footer-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .page-footer-nav h3,
+  .page-footer-contacts h3 {
+    margin-bottom: 25px;
   }
 
   .page-footer__text-years {
@@ -75,17 +85,18 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    height: 50%;
-    width: 550px;
     font-size: 15px;
+    height: 100px;
+    min-width: 450px;
 
     li {
-      width: 50%;
+      min-width: 123px;
     }
   }
 
-  .page-footer-contacts {
-    margin-left: -10%;
+  .page-footer-contacts__list {
+    min-width: 350px;
+    width: 100%;
   }
 
   .page-footer-btn button {

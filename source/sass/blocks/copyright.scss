@@ -11,24 +11,26 @@
   line-height: 24px;
 }
 
+.copyright__text-confidential a {
+  color: $white-grey-font;
+}
+
 @media (min-width: $desktop-width-min) {
   .copyright-wrap {
-    padding-top: 1%;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-top: 13px;
+    padding-left: 13%;
+    padding-right: 13%;
     padding-bottom: 1%;
-  }
-
-  .copyright__text-rights {
-    margin-right: 5%;
+    position: relative;
   }
 
   .copyright__text-years {
-    margin-right: 9%;
+    position: absolute;
+    left: 25%;
   }
 
   .copyright__text-confidential {
-    margin-right: 15%;
+    margin-left: 43px;
   }
 }
 
