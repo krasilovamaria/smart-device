@@ -14,6 +14,9 @@
 }
 
 .page-footer__social-list svg {
+  display: block;
+  width: 27px;
+  height: 27px;
   margin-top: 2rem;
   margin-right: 1rem;
 }
@@ -32,6 +35,7 @@
   margin-bottom: 15px;
   padding: 0;
   font-family: $font-roboto;
+  font-weight: 400;
   text-transform: uppercase;
   color: $dark-blue-font;
 }
@@ -201,11 +205,29 @@
     align-items: center;
   }
 
-  .page-footer__closed {
+  .page-footer__accordeon__inner {
     display: none;
   }
 
-  .page-footer__opened {
+  .page-footer__accordeon__heading::after {
+    content: "";
+    width: 16px;
+    height: 16px;
+    background-image: url("../img/icon-plus.svg");
+  }
+
+  .page-footer__accordeon__heading_active::after {
+    content: "";
+    width: 16px;
+    height: 2px;
+    background-image: url("../img/icon-minus.svg");
+  }
+
+  .page-footer__accordeon__heading_active + .page-footer__accordeon__inner {
+    display: block;
+  }
+
+  .page-footer__nojs {
     display: block;
   }
 

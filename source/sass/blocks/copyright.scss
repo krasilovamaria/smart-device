@@ -11,6 +11,10 @@
   line-height: 24px;
 }
 
+.copyright__text-confidential a {
+  color: $white-grey-font;
+}
+
 @media (min-width: $desktop-width-min) {
   .copyright-wrap {
     padding-top: 1%;
