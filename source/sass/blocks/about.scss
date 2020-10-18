@@ -16,8 +16,7 @@
     color: $grey-font;
   }
 
-  button {
-    @include button-reset;
+  a {
     display: inline-block;
     vertical-align: middle;
     font-family: $font-roboto;
@@ -92,7 +91,7 @@
       line-height: 22px;
     }
 
-    button {
+    a {
       margin-top: 23px;
     }
   }
@@ -129,13 +128,13 @@
       line-height: 22px;
     }
 
-    button {
+    a {
       margin-top: -16px;
       margin-bottom: 47px;
     }
   }
 
-  .about__more::before {
+  .about__more {
     display: none;
   }
 }

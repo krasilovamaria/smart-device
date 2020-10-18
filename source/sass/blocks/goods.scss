@@ -219,6 +219,11 @@
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
         background-image: url("../img/services-lighting-mobile@2x.jpg");
       }
+
+      p {
+        top: 12%;
+        left: 13.5%;
+      }
     }
   }
 
@@ -227,7 +232,7 @@
     padding-left: 35px;
 
     p {
-      width: 150px;
+      width: 163px;
     }
   }
 }
