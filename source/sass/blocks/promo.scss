@@ -43,25 +43,26 @@
 
 @media (min-width: $desktop-width-min) {
   .promo {
-    height: 792px;
+    height: 875px;
     width: 100%;
   }
 
   .promo__wrap {
     position: relative;
-    padding-top: 12%;
-    padding-left: 13%;
+    min-width: 750px;
+    padding-top: 15%;
+    padding-left: 10%;
     padding-right: 10%;
   }
 
   .promo__heading {
-    margin-bottom: 24px;
+    margin-bottom: 60px;
     font-size: 80px;
     line-height: 94px;
   }
 
   .promo__info {
-    margin-bottom: 44px;
+    margin-bottom: 53px;
     padding-left: 96px;
     width: 777px;
     font-size: 22px;
@@ -79,7 +80,6 @@
   }
 
   .promo__button {
-    margin-left: 100px;
     padding: 17px;
     height: 55px;
     width: 407px;
@@ -91,8 +91,8 @@
 
   .promo__scroll {
     position: absolute;
-    bottom: 1%;
-    left: 11%;
+    bottom: -5%;
+    left: 5%;
     display: inline-block;
     padding: 5px;
     vertical-align: middle;
@@ -104,11 +104,10 @@
 
   .promo__img-container {
     position: relative;
-    margin-top: -13.5%;
-    width: 100%;
+    margin-top: -15%;
+    width: 6171px;
     height: 641px;
     background-image: url("../img/bg-triangles-desktop.svg");
-    background-repeat: no-repeat;
 
     img {
       width: 705px;
@@ -118,7 +117,6 @@
 
   .promo__img-cards {
     margin-top: 20%;
-    margin-left: 1%;
   }
 }
 

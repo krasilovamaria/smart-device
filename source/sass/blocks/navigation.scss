@@ -27,7 +27,7 @@
 .navigation__contacts-call {
   @include button-reset;
   display: block;
-  width: 177px;
+  width: 180px;
   height: 45px;
 
   @include font-nav;
@@ -43,20 +43,11 @@
 .navigation__contacts-list-item-link {
   @include flex-row;
   color: $white;
+  margin-right: 5rem;
 }
 
 .navigation__contacts-list-item-link span {
   margin-left: 1rem;
-}
-
-@media (min-width: $desktop-width-min) {
-  .navigation__contacts-call {
-    margin-left: -17px;
-  }
-
-  .navigation__contacts-list-item-link {
-    margin-right: 4rem;
-  }
 }
 
 @media (min-width: $tablet-width-min) and (max-width: $tablet-width-max) {
@@ -64,11 +55,19 @@
   .navigation__contacts-list-item-link span {
     display: none;
   }
+
+  .navigation__contacts-list-item-link {
+    margin-right: 0;
+  }
 }
 
 @media (min-width: $mobile-width-min) and (max-width: $mobile-width-max) {
   .navigation__contacts-call,
   .navigation__contacts-list-item-link span {
     display: none;
+  }
+
+  .navigation__contacts-list-item-link {
+    margin-right: 0;
   }
 }
