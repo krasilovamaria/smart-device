@@ -108,6 +108,21 @@
   }
 }
 
+@media (min-width: $desktop-width-min) {
+  .goods {
+    padding-top: 4.7%;
+    padding-bottom: 6%;
+
+    h2 {
+      margin-bottom: 50px;
+    }
+  }
+
+  .goods__list {
+    max-width: 1220px;
+  }
+}
+
 @media (min-width: $tablet-width-min) and (max-width: $tablet-width-max) {
   .goods {
     padding: 7% 3%;
