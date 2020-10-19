@@ -59,6 +59,10 @@
   .navigation__contacts-list-item-link {
     margin-right: 0;
   }
+
+  .navigation-img-mail::before {
+    margin-left: -2.5rem;
+  }
 }
 
 @media (min-width: $mobile-width-min) and (max-width: $mobile-width-max) {

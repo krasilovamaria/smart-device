@@ -209,11 +209,20 @@
 
 @media (min-width: $tablet-width-min) and (max-width: $tablet-width-max) {
   .questionary {
-    padding: 10% 12%;
+    padding: 10.5% 11.5%;
+    padding-bottom: 10%;
   }
 
   .questionary__title {
     margin-bottom: 16px;
+    font-size: 32px;
+    line-height: 45px;
+    font-weight: 400;
+  }
+
+  .questionary__info {
+    margin-bottom: 52px;
+    margin-left: 3px;
   }
 
   .questionary-form__input-wrap {
@@ -255,8 +264,8 @@
     }
 
     textarea {
-      height: 150px;
-      margin-bottom: 50px;
+      height: 160px;
+      margin-bottom: 46px;
     }
   }
 
@@ -272,13 +281,14 @@
   }
 
   .questionary-form__btn {
-    width: 48%;
-    padding: 13px 40px;
+    width: 64%;
+    padding: 14px 40px;
     margin-bottom: 30px;
   }
 
   .questionary-form__check-wrap {
     margin-left: 39px;
+    padding-top: 7px;
   }
 
   .questionary-form__custom-checkbox + label {
@@ -288,12 +298,12 @@
   }
 
   .questionary-form__custom-checkbox + label::before {
-    top: 8px;
+    top: 11px;
     left: 0;
   }
 
   .questionary-form__custom-checkbox:checked + label::after {
-    top: 8px;
+    top: 11px;
     left: 0;
   }
 }

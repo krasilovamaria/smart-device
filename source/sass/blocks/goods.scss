@@ -111,7 +111,8 @@
 @media (min-width: $tablet-width-min) and (max-width: $tablet-width-max) {
   .goods {
     padding: 7% 3%;
-    padding-top: 55px;
+    padding-top: 51px;
+    padding-right: 3%;
     padding-bottom: 11px;
 
     h2 {
@@ -124,6 +125,7 @@
     p {
       top: 36px;
       left: 45px;
+      width: 160px;
     }
   }
 
@@ -163,6 +165,11 @@
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
         background-image: url("../img/services-lighting-tablet@2x.jpg");
+      }
+
+      p {
+        top: 49px;
+        left: 46px;
       }
     }
   }
