@@ -43,26 +43,26 @@
 
 @media (min-width: $desktop-width-min) {
   .promo {
-    height: 875px;
+    height: 787px;
     width: 100%;
   }
 
   .promo__wrap {
     position: relative;
     min-width: 750px;
-    padding-top: 15%;
-    padding-left: 10%;
+    padding-top: 11.9%;
+    padding-left: 2.8%;
     padding-right: 10%;
   }
 
   .promo__heading {
-    margin-bottom: 60px;
+    margin-bottom: 29px;
     font-size: 80px;
     line-height: 94px;
   }
 
   .promo__info {
-    margin-bottom: 53px;
+    margin-bottom: 43px;
     padding-left: 96px;
     width: 777px;
     font-size: 22px;
@@ -81,6 +81,7 @@
 
   .promo__button {
     padding: 17px;
+    margin-left: 96px;
     height: 55px;
     width: 407px;
   }
@@ -91,8 +92,8 @@
 
   .promo__scroll {
     position: absolute;
-    bottom: -5%;
-    left: 5%;
+    bottom: 0;
+    left: 0.8%;
     display: inline-block;
     padding: 5px;
     vertical-align: middle;
@@ -104,10 +105,12 @@
 
   .promo__img-container {
     position: relative;
-    margin-top: -15%;
-    width: 6171px;
+    margin-top: -11.8%;
+    margin-left: 0.3%;
+    width: 617px;
     height: 641px;
     background-image: url("../img/bg-triangles-desktop.svg");
+    background-repeat: no-repeat;
 
     img {
       width: 705px;
@@ -116,7 +119,7 @@
   }
 
   .promo__img-cards {
-    margin-top: 20%;
+    margin-top: 22%;
   }
 }
 
@@ -179,6 +182,7 @@
     width: 770px;
     height: 539px;
     background-image: url("../img/bg-triangles-tablet.svg");
+    background-repeat: no-repeat;
 
     img {
       width: 465px;
@@ -213,6 +217,7 @@
     width: 675px;
     height: 495px;
     background-image: url("../img/bg-triangles-mobile.svg");
+    background-repeat: no-repeat;
 
     img {
       width: 296px;
