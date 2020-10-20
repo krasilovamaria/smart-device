@@ -43,13 +43,15 @@
 
 @media (min-width: $desktop-width-min) {
   .promo {
-    height: 787px;
-    margin: 0 auto;
+    height: 759px;
     padding: 0;
     min-width: 750px;
   }
 
   .promo__wrap {
+    display: flex;
+    align-items: center;
+    margin: auto;
     position: relative;
     min-width: 750px;
   }
