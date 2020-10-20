@@ -209,41 +209,43 @@
         </div>
       </section>
       <section class="questionary" id="questionary">
-        <div class="questionary__img-wrap">
-          <picture>
-            <source type="image/webp" srcset="img/paper-airplane@1px.webp 1x, img/paper-airplane@2px.webp 2x">
-            <img src="img/paper-airplane@1px.png" srcset="img/paper-airplane@2px.png 2x" width="511" height="288"
-              alt="paper-airplane">
-          </picture>
-        </div>
-        <div class="questionary__form-wrap">
-          <div class="questionary__wrapper">
-            <h3 class="questionary__title">Остались вопросы? Задайте их нам!</h3>
-            <p class="questionary__info">Мы проконсультируем Вас бесплатно</p>
+        <div class="questionary__wrap">
+          <div class="questionary__img-container">
+            <picture>
+              <source type="image/webp" srcset="img/paper-airplane@1px.webp 1x, img/paper-airplane@2px.webp 2x">
+              <img src="img/paper-airplane@1px.png" srcset="img/paper-airplane@2px.png 2x" width="511" height="288"
+                alt="paper-airplane">
+            </picture>
           </div>
-          <form class="questionary-form" action="#" method="get">
-            <div class="questionary-form__input-wrap">
-              <label for="questionary-form-username" class="visually-hidden"></label>
-              <input aria-label="Your name" type="text" placeholder="Имя" name="username" id="questionary-form-username"
-                required>
-
-              <label for="questionary-form-phone" class="visually-hidden"></label>
-              <input aria-label="Your phone" type="tel" placeholder="Телефон" name="phone" id="questionary-form-phone"
-                required>
-
-              <label for="questionary-form-field" class="visually-hidden"></label>
-              <textarea name="question-field" cols="30" rows="7" placeholder="Ваш вопрос" id="questionary-form-field"
-                required></textarea>
+          <div class="questionary__form-wrap">
+            <div class="questionary__wrap-info">
+              <h3 class="questionary__title">Остались вопросы? Задайте их нам!</h3>
+              <p class="questionary__info">Мы проконсультируем Вас бесплатно</p>
             </div>
-            <div class="questionary-form__btn-wrap">
-              <button class="questionary-form__btn" type="submit" name="question">Задать вопрос</button>
-              <div class="questionary-form__check-wrap">
-                <input aria-label="Agree" type="checkbox" class="questionary-form__custom-checkbox"
-                  id="confidential-input" name="confidential" required>
-                <label for="confidential-input">Я согласен на обработку персональных данных</label>
+            <form class="questionary-form" action="#" method="get">
+              <div class="questionary-form__input-wrap">
+                <label for="questionary-form-username" class="visually-hidden"></label>
+                <input class="questionary-form__input-wrap-first" aria-label="Your name" type="text" placeholder="Имя" name="username"
+                  id="questionary-form-username" required>
+
+                <label for="questionary-form-phone" class="visually-hidden"></label>
+                <input aria-label="Your phone" type="tel" placeholder="Телефон" name="phone" id="questionary-form-phone"
+                  required>
+
+                <label for="questionary-form-field" class="visually-hidden"></label>
+                <textarea name="question-field" cols="30" rows="7" placeholder="Ваш вопрос" id="questionary-form-field"
+                  required></textarea>
               </div>
-            </div>
-          </form>
+              <div class="questionary-form__btn-wrap">
+                <button class="questionary-form__btn" type="submit" name="question">Задать вопрос</button>
+                <div class="questionary-form__check-wrap">
+                  <input aria-label="Agree" type="checkbox" class="questionary-form__custom-checkbox"
+                    id="confidential-input" name="confidential" required>
+                  <label for="confidential-input">Я согласен на обработку персональных данных</label>
+                </div>
+              </div>
+            </form>
+          </div>
         </div>
       </section>
       <section class="popup popup--closed">
