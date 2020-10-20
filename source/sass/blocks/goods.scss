@@ -1,7 +1,6 @@
 .goods {
   background-color: $dark-blue;
   color: $white;
-  padding: 5% 12%;
   font-family: $font-roboto;
   font-weight: 400;
   width: 100%;
@@ -116,10 +115,17 @@
     h2 {
       margin-bottom: 50px;
     }
+
+    p {
+      width: 170px;
+      top: 9%;
+      left: 12%;
+    }
   }
 
-  .goods__list {
-    max-width: 1220px;
+  .goods__container {
+    margin: 0 auto;
+    max-width: 1165px;
   }
 }
 
