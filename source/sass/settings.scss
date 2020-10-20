@@ -63,12 +63,12 @@ input[type="radio"].visually-hidden {
 
 @media (min-width: $desktop-width-min) {
   .wrap-header {
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     height: 119px;
     margin: auto;
     padding: 0;
-    min-width: 750px;
+    max-width: 1400px;
   }
 }
 
