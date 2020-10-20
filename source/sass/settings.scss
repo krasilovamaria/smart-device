@@ -59,19 +59,20 @@ input[type="radio"].visually-hidden {
 
 .wrap-header {
   @include flex-row;
-  width: 100%;
 }
 
 @media (min-width: $desktop-width-min) {
   .wrap-header {
-    padding-top: 2.3%;
-    padding-left: 3%;
-    padding-right: 3%;
+    justify-content: space-between;
+    margin: auto;
+    padding: 0;
+    min-width: 750px;
   }
 }
 
 @media (min-width: $tablet-width-min) and (max-width: $tablet-width-max) {
   .wrap-header {
+    width: 100%;
     justify-content: space-between;
     padding-top: 2.5%;
     padding-left: 3%;
@@ -81,6 +82,7 @@ input[type="radio"].visually-hidden {
 
 @media (min-width: $mobile-width-min) and (max-width: $mobile-width-max) {
   .wrap-header {
+    width: 100%;
     justify-content: space-between;
     padding-top: 5%;
     padding-left: 5%;
