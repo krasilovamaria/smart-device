@@ -15,18 +15,28 @@
   .copyright-wrap {
     padding-top: 1%;
     padding-bottom: 1%;
+    justify-content: center;
+    max-width: 1400px;
+    width: 100%;
   }
 
   .copyright__text-rights {
+    min-width: 165px;
     margin-right: 5%;
   }
 
   .copyright__text-years {
+    min-width: 233px;
     margin-right: 9%;
   }
 
   .copyright__text-confidential {
+    min-width: 217px;
     margin-right: 15%;
+  }
+
+  .copyright__text-develop {
+    min-width: 192px;
   }
 }
 

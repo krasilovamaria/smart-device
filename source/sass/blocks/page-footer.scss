@@ -5,6 +5,7 @@
 }
 
 .page-footer {
+  height: 316px;
   width: 100%;
   font-size: 15px;
   line-height: 25px;
@@ -62,8 +63,11 @@
   }
 
   .page-footer-wrap {
+    margin: 0 auto;
+    max-width: 1400px;
     width: 100%;
-    padding-top: 5%;
+    justify-content: space-between;
+    padding-top: 3.5%;
     padding-bottom: 2%;
   }
 
