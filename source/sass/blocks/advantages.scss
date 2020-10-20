@@ -79,13 +79,17 @@
 
   .advantages__item {
     position: relative;
-    max-width: 46.9%;
+    width: 47%;
     min-height: 300px;
-    margin-right: 30px;
+    margin-right: 0;
     margin-bottom: 30px;
     padding-top: 40px;
     padding-left: 43px;
     padding-right: 42px;
+
+    &:nth-child(odd) {
+      margin-right: 30px;
+    }
 
     svg {
       margin-bottom: 14px;
