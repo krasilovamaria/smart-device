@@ -14,6 +14,10 @@
   background-color: $white-grey;
 }
 
+.page-footer__logo {
+  pointer-events: none;
+}
+
 .page-footer__social-list svg {
   display: block;
   width: 27px;

@@ -5,6 +5,10 @@
   background-image: url("../img/bg-mask-desktop.png");
 }
 
+.page-header__logo {
+  pointer-events: none;
+}
+
 .page-header__logo img {
   width: 202px;
   height: 52px;
