@@ -185,10 +185,15 @@
 }
 
 @media (min-width: $mobile-width-min) and (max-width: $mobile-width-max) {
+  .page-footer {
+    height: 100%;
+  }
+
   .page-footer-links {
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 260px;
     padding-top: 14%;
     padding-bottom: 16%;
     padding-left: 3%;
@@ -212,7 +217,7 @@
 
   .page-footer-nav {
     padding-top: 9%;
-    padding-bottom: 3%;
+    padding-bottom: 4%;
     padding-left: 5%;
     padding-right: 4%;
     border-bottom: 1px solid $white-grey-line;
@@ -224,7 +229,7 @@
 
   .page-footer-contacts {
     padding-top: 9%;
-    padding-bottom: 3%;
+    padding-bottom: 4%;
     padding-left: 5%;
     padding-right: 4%;
 
@@ -236,6 +241,7 @@
   .page-footer__nav-list,
   .page-footer-contacts__list {
     padding-top: 6%;
+    padding-bottom: 4%;
   }
 
   .page-footer-btn {

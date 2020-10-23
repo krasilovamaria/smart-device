@@ -131,6 +131,8 @@
 
 @media (min-width: $mobile-width-min) and (max-width: $mobile-width-max) {
   .about {
+    width: 100%;
+
     h3 {
       font-size: 28px;
       line-height: 39px;
@@ -139,6 +141,8 @@
   }
 
   .about__container {
+    min-width: 320px;
+    width: 100%;
     justify-content: center;
     padding-top: 12%;
     padding-bottom: 5%;
