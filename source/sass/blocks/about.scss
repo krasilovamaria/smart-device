@@ -55,11 +55,14 @@
 @media (min-width: $desktop-width-min) {
   .about__container {
     max-width: 1220px;
-    padding-top: 4%;
-    padding-bottom: 5%;
+    width: 100%;
+    padding: 0 25px;
+    padding-top: 78px;
+    margin-bottom: 110px;
 
     p {
-      width: 984px;
+      max-width: 984px;
+      width: 100%;
       margin-bottom: 27px;
     }
 

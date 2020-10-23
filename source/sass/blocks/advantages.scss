@@ -69,30 +69,31 @@
 
 @media (min-width: $desktop-width-min) {
   .advantages__container {
+    margin: 0 auto;
     display: flex;
+    padding: 0 25px;
+    max-width: 1220px;
+    width: 100%;
   }
 
   .advantages__list {
-    margin: 0 auto;
-    max-width: 1220px;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
   }
 
   .advantages__item {
     position: relative;
-    width: 47%;
+    width: calc(50% - 40px);
     min-height: 300px;
-    margin-right: 0;
-    margin-bottom: 30px;
-    padding-top: 40px;
     padding-left: 43px;
-    padding-right: 42px;
-
-    &:nth-child(odd) {
-      margin-right: 30px;
-    }
+    padding-right: 45px;
+    padding-top: 39px;
+    margin-bottom: 30px;
 
     svg {
-      margin-bottom: 14px;
+      margin-bottom: 20px;
     }
 
     h3 {
@@ -103,9 +104,31 @@
       margin-bottom: 10px;
     }
 
+    &--stopwatch {
+      svg {
+        height: 29px;
+        width: 35px;
+      }
+    }
+
+    &--hired {
+      svg {
+        height: 35px;
+        width: 35px;
+      }
+    }
+
     &--detective {
       svg {
-        margin-bottom: 22px;
+        height: 31px;
+        width: 36px;
+      }
+    }
+
+    &--tag {
+      svg {
+        height: 35px;
+        width: 35px;
       }
     }
   }
